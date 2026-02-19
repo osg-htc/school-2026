@@ -8,6 +8,8 @@
 
 *Learn how during a week this summer at the lovely [University of Wisconsin–Madison](https://wisc.edu/)*
 
+<p style="color: #FF6600; font-weight: bold;">Applications are now open! <a href="#applications">See below</a> for details.</p>
+
 During the School
 &mdash;
 <span style="font-weight: bold; color: #FF6600;">July 13&ndash;17</span>
@@ -40,9 +42,23 @@ basic travel and local costs associated with the School.
 
 ## Applications
 
-We plan to open applications in January.
-Please check back here for updates and a link to the application form.
+Applications are now open.
+**The deadline for applications is Friday, 20 March 2026.**
+Complete your application by then to ensure consideration!
 
+To apply, complete **both** of the steps below (in parallel, if you like):
+
+* Submit the [online application form](https://uwmadison.co1.qualtrics.com/jfe/form/SV_cI3kiXR6ai6GcJM)
+  (the link goes to a Qualtrics survey, which is the application)
+
+* Have someone email a letter of recommendation for you to
+  [school@osg-htc.org](mailto:school@osg-htc.org)
+  (ideally PDF or plain text)
+
+For the letter of recommendation, ask someone who knows you professionally&nbsp;&mdash;
+ideally a faculty member or other supervisor.
+They should clearly write “OSG School 2026” and your name in the subject line and letter,
+so that we can associate your application and letter.
 
 ## Contact Us
 
