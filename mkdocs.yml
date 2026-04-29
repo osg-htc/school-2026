@@ -37,3 +37,7 @@ extra:
 
 nav:
   - Home:                           index.md
+  - Logistics:
+    - General information:          logistics/index.md
+    - Visa requirements:            logistics/visas.md
+    - Hotel information:            logistics/hotel.md
