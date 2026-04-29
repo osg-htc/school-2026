@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://osg-htc.org/school-2026/</loc>
-     <lastmod>2026-03-22</lastmod>
+     <lastmod>2026-04-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://osg-htc.org/school-2026/logistics/</loc>
+     <lastmod>2026-04-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://osg-htc.org/school-2026/logistics/visas/</loc>
+     <lastmod>2026-04-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://osg-htc.org/school-2026/logistics/hotel/</loc>
+     <lastmod>2026-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
