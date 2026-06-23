@@ -28,7 +28,7 @@ All School participants and staff are encourage to attend!
     <tr>
       <td>9:00</td>
       <td>9:15</td>
-      <td>Welcome to the OSG School</td>
+      <td><span class="before-dot text-green">Welcome to the OSG School</span></td>
       <td>Tim C.</td>
     </tr>
     <tr>
@@ -85,8 +85,8 @@ All School participants and staff are encourage to attend!
       <td>14:00</td>
       <td>15:00</td>
       <td><span class="before-dot text-pink">Exercises: Many jobs (2.n series)</span><br>
-        <span class="before-dot text-black">Individual consultations</span></td>
-      <td>-</td>
+        <span class="before-dot text-orange">Individual consultations</span></td>
+      <td>staff</td>
     </tr>
     <tr>
       <td>15:00</td>
@@ -99,9 +99,9 @@ All School participants and staff are encourage to attend!
       <td>16:45</td>
       <td>
         <span class="before-dot text-pink">Exercises: Goals and unfinished exercises</span><br>
-        <span class="before-dot text-black">Individual consultations</span>
+        <span class="before-dot text-orange">Individual consultations</span>
       </td>
-      <td>-</td>
+      <td>staff</td>
     </tr>
     <tr>
       <td>16:45</td>
@@ -166,9 +166,9 @@ All School participants and staff are encourage to attend!
       <td>10:45</td>
       <td>12:15</td>
       <td><span class="before-dot text-pink">Exercises: Software and unfinished exercises</span><br>
-              <span class="before-dot text-black">Individual consultations</span>
+              <span class="before-dot text-orange">Individual consultations</span>
       </td>
-      <td>-</td>
+      <td>staff</td>
     </tr>
     <tr>
       <td>12:15</td>
@@ -203,7 +203,7 @@ All School participants and staff are encourage to attend!
       <td>16:45</td>
       <td>
         <span class="before-dot text-pink">Exercises: OSPool and unfinished exercises</span><br>
-        <span class="before-dot text-black">Individual consultations</span>
+        <span class="before-dot text-orange">Individual consultations</span>
       </td>
       <td>staff</td>
     </tr>
@@ -296,7 +296,7 @@ All School participants and staff are encourage to attend!
       <td>17:00</td>
       <td>
         Afternoon off or optional work time<br>
-        <span class="before-dot text-black">Or, individual consultations</span>
+        <span class="before-dot text-orange">Or, individual consultations</span>
       </td>
       <td>staff</td>
     </tr>
@@ -357,8 +357,8 @@ All School participants and staff are encourage to attend!
       <td>
         <span class="before-dot text-pink">Exercises: DAGMan</span><br>
         <span class="before-dot text-light-orange">Work Time: Apply HTC to own research</span><br>
-        <span class="before-dot text-black">Individual consultations</span><br>
-        <span class="before-dot text-orange">Bioinformatics work session (optional)</span><br>
+        <span class="before-dot text-orange">Individual consultations</span><br>
+        <span class="before-dot text-yellow">Bioinformatics work session (optional)</span><br>
       </td>
       <td>staff</td>
     </tr>
@@ -373,8 +373,8 @@ All School participants and staff are encourage to attend!
       <td>15:45</td>
       <td>
         <span class="before-dot text-light-orange">Work Time: Apply HTC to own research</span><br>
-        <span class="before-dot text-black">Individual consultations</span><br>
-        <span class="before-dot text-orange">Bioinformatics work session (optional)</span><br>
+        <span class="before-dot text-orange">Individual consultations</span><br>
+        <span class="before-dot text-yellow">Bioinformatics work session (optional)</span><br>
       </td>
       <td>staff</td>
     </tr>
@@ -427,7 +427,7 @@ All School participants and staff are encourage to attend!
       <td>10:30</td>
       <td>
         <span class="before-dot text-light-orange">Work time: Apply HTC to own research</span><br>
-        <span class="before-dot text-black">Individual consultations</span>
+        <span class="before-dot text-orange">Individual consultations</span>
       </td>
       <td>staff</td>
     </tr>
@@ -507,7 +507,7 @@ All School participants and staff are encourage to attend!
   </tbody>
 </table>
 
-**Closing Dinner for Participants and Staff**
+<div style="font-size: larger; font-weight: bold; color: #FF6600;">Closing Dinner for Participants and Staff</div>
 
 *   **Location:** [Fluno Center](https://fluno.com), 601 University Avenue; Skyview Room, 8th floor
 *   **Time:** Starting at 6:30 p.m.
