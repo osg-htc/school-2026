@@ -82,7 +82,7 @@ All School participants and staff are encourage to attend!
       <td>Amber</td>
     </tr>
     <tr>
-      <td>14:15</td>
+      <td>14:00</td>
       <td>15:00</td>
       <td><span class="before-dot text-pink">Exercises: Many jobs (2.n series)</span><br>
         <span class="before-dot text-black">Individual consultations</span></td>
@@ -499,8 +499,8 @@ All School participants and staff are encourage to attend!
       <td>TBD</td>
     </tr>
     <tr>
-      <td>16:40</td>
-      <td>17:10</td>
+      <td>16:30</td>
+      <td>17:00</td>
       <td><span class="before-dot text-green">Lecture: Forward</span></td>
       <td>Tim</td>
     </tr>
