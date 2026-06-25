@@ -466,7 +466,7 @@ All School participants and staff are encourage to attend!
         <br>
         &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;<br>
         <!--<div style="margin-left: 2ex;">“Title of talk”</div>-->
-        &#9654; <span style="color: rgb(173, 81, 12);">TBDk</span>;<br>
+        &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;<br>
         <!--<div style="margin-left: 2ex;">“Title of talk”</div>-->
       </td>
       <td>-</td>
@@ -510,4 +510,4 @@ All School participants and staff are encourage to attend!
 <div style="font-size: larger; font-weight: bold; color: #FF6600;">Closing Dinner for Participants and Staff</div>
 
 *   **Location:** [Fluno Center](https://fluno.com), 601 University Avenue; Skyview Room, 8th floor
-*   **Time:** Starting at 6:30 p.m.
+*   **Time:** Starting at 5:45 p.m.
