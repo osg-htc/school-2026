@@ -39,17 +39,17 @@ There will be optional, evening work sessions on Monday, Tuesday, Wednesday, and
 
 The main sessions for the School will be held at
 
-*Room **TBD***  
-*[Morgridge Hall](https://maps.wisc.edu/s/bh7h7git)*  
-*1205 University Ave*  
-*Madison, WI 53706*
+- *Room 2532*  
+  *[Morgridge Hall](https://maps.wisc.edu/s/bh7h7git)*  
+  *1205 University Ave*  
+  *Madison, WI 53706*
 
 Opening and Closing Dinners will be held at 
 
-*Dining Room, 1st floor (Opening) and Skyview Room, 8th floor (Closing)*  
-*[Fluno Center](https://maps.wisc.edu/s/m7srq3pg)*  
-*601 University Ave*  
-*Madison, WI 53715*
+- *Dining Room, 1st floor (Opening) and Skyview Room, 8th floor (Closing)*  
+  *[Fluno Center](https://maps.wisc.edu/s/m7srq3pg)*  
+  *601 University Ave*  
+  *Madison, WI 53715*
 
 ## Contact Information
 
