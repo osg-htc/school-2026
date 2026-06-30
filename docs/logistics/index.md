@@ -46,7 +46,7 @@ The main sessions for the School will be held at
 
 Opening and Closing Dinners will be held at 
 
-- *Dining Room, 1st floor (Opening) and Skyview Room, 8th floor (Closing)*  
+- *Skyview Room, 8th floor (Opening) and Dining Room, 1st floor (Closing)*  
   *[Fluno Center](https://maps.wisc.edu/s/m7srq3pg)*  
   *601 University Ave*  
   *Madison, WI 53715*
