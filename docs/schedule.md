@@ -5,7 +5,7 @@
 All School participants and staff are encourage to attend!
 
 **Time:** Starting at 6:30 p.m.<br>
-**Location:** [Fluno Center](https://fluno.com), 601 University Avenue; Dining room, 1st floor
+**Location:** [Fluno Center](https://fluno.com), 601 University Avenue; Skyview Room, 8th floor
 
 ## July 13 (Monday)
 
@@ -519,5 +519,5 @@ All School participants and staff are encourage to attend!
 
 <div style="font-size: larger; font-weight: bold; color: #FF6600;">Closing Dinner for Participants and Staff</div>
 
-*   **Location:** [Fluno Center](https://fluno.com), 601 University Avenue; Skyview Room, 8th floor
+*   **Location:** [Fluno Center](https://fluno.com), 601 University Avenue; Dining Room, 1st floor
 *   **Time:** Starting at 5:45 p.m.
