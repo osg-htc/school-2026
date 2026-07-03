@@ -38,8 +38,11 @@ extra:
 nav:
   - Home:                           index.md
   - Schedule:                       schedule.md
+  - Health Guidelines:              health.md
   - Logistics:
     - General information:          logistics/index.md
     - Visa requirements:            logistics/visas.md
-    - Travel planning:              logistics/travel-planning.md
     - Hotel information:            logistics/hotel.md
+    - Location & transportation:    logistics/location.md
+    - Travel planning:              logistics/travel-planning.md
+    - Travel advice:                logistics/travel-advice.md
