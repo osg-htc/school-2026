@@ -116,14 +116,12 @@ pass through the University of Wisconsin&ndash;Madison campus.
 
 ### Taxis and Ride-Sharing Services
 
-We cannot recommend any particular option, but here are some options:
-
-Rideshare services active in Madison
+Rideshare services active in Madison:
 
 * [Lyft](https://www.lyft.com/)
 * [Uber](https://www.uber.com/ride/)
 
-Local taxi companies
+Local taxi companies:
 
 * [Madison Taxi](https://www.madtaxi.com)
 * [Union Cab](https://www.unioncab.com/)

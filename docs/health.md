@@ -3,9 +3,8 @@
 The OSG School 2026 at the UW–Madison
 welcomes participants from around the United States.
 This page contains health guidelines for this year’s School.
-While the focus is on COVID-19,
-most of these guidelines also apply to preventing the spread of other infectious illnesses
-(flu, colds, GI viruses, etc.).
+We are especially focused on preventing the spread of infectious illnesses,
+such as COVID-19, colds, flu, GI viruses, and so on.
 
 It is very important to us that everyone stays safe and healthy throughout the whole School.
 We will have the best event possible if everyone stays well!
@@ -13,7 +12,9 @@ There are no hard rules here,
 just a reminder that **we are all in this together**.
 
 If you have any questions, concerns, or comments about these guidelines,
-please email us at school@osg-htc.org or message us on Slack.
+please email us at
+[school@osg-htc.org](mailto:school@osg-htc.org)
+or message us on Slack.
 
 ## Before Traveling to the School
 
@@ -31,7 +32,8 @@ It is best to bring your own mask,
 although we have a few to hand out.
 
 We encourage everyone to consider outdoor dining options when reasonable&nbsp;&mdash;
-not just for reducing risk, but also because Madison is beautiful in the summer! 
+not just for reducing risk, but also because Madison is beautiful in the summer!
+Morgridge Hall has multiple options for getting outside.
 
 While in Madison, if you feel unwell, stay home or at the hotel.
 When you can, let School staff know why you are absent&nbsp;&mdash;
@@ -41,7 +43,7 @@ we will help support you remotely (see below).
 
 If you experience possible
 [symptoms of COVID-19](https://www.cdc.gov/covid/signs-symptoms/)
-other respiratory illness,
+or other respiratory illness,
 follow [CDC guidelines](https://www.cdc.gov/respiratory-viruses/prevention/precautions-when-sick.html)
 for what to do when sick.
 
