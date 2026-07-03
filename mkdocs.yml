@@ -43,6 +43,7 @@ nav:
     - Visa requirements:            logistics/visas.md
     - Travel planning:              logistics/travel-planning.md
     - Hotel information:            logistics/hotel.md
+    - Long-Term OSPool access:      logistics/projects.md
   - Materials:
     - Overview:                     materials/index.md
     - Intro to HTCondor:
