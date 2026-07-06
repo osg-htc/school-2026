@@ -23,6 +23,9 @@ markdown_extensions:
 #        custom_icons:
 #          - overrides/.icons
 #  - pymdownx.critic
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 
 extra_css:
