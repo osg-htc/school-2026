@@ -6,41 +6,38 @@ View the slides: [pdf](welcome/files/osgs25-day1-part1-welcome-timc.pdf)
 
 ## Intro to HTC and HTCondor Job Execution
 
-### Intro to HTC Slides
+!!! info "Slides"
+    * Intro to HTC: [pdf](htcondor/files/osgschool25-htc-intro.pdf)
+    * Worksheet: [pdf](htcondor/files/HTC-List-Of-Jobs.pdf) or [Google Drive](https://docs.google.com/presentation/d/1DnJMOuw0YjuVg70vCvafXlJUm4k5Ovv7Zd1SJbfk6hU/edit?usp=sharing)
 
-Intro to HTC: [pdf](htcondor/files/osgschool25-htc-intro.pdf)
+## Intro to HTCondor
 
-Worksheet: [pdf](htcondor/files/HTC-List-Of-Jobs.pdf) or [Google Drive](https://docs.google.com/presentation/d/1DnJMOuw0YjuVg70vCvafXlJUm4k5Ovv7Zd1SJbfk6hU/edit?usp=sharing)
+!!! info "Slides"
+    * Intro to HTCondor: [pdf](htcondor/files/osgus25-htc-htcondor.pdf)
+    <!-- [PowerPoint](htcondor/files/osgus22-htc-htcondor.pptx)) -->
 
-### Intro to HTCondor Slides
+!!! note "Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)"
+    - [Exercise 1.1: Log in to the local submit machine and look around](htcondor/part1-ex1-login.md)
+    - [Exercise 1.2: Experiment with HTCondor commands](htcondor/part1-ex2-commands.md)
+    - [Exercise 1.3: Run jobs!](htcondor/part1-ex3-jobs.md)
+    - [Exercise 1.4: Read and interpret log files](htcondor/part1-ex4-logs.md)
+    - [Exercise 1.5: Determining Resource Needs](htcondor/part1-ex5-request.md)
+    - [Exercise 1.6: Remove jobs from the queue](htcondor/part1-ex6-remove.md)
 
-View the slides: [pdf](htcondor/files/osgus25-htc-htcondor.pdf)
-<!-- [PowerPoint](htcondor/files/osgus22-htc-htcondor.pptx)) -->
+!!! tip "Bonus Exercises: Job Attributes and Handling"
+    - [Bonus Exercise 1.7: Explore `condor_q`](htcondor/part1-ex7-queue.md)
+    - [Bonus Exercise 1.8: Explore `condor_status`](htcondor/part1-ex8-status.md)
 
-### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
+## Intro to HTCondor: Submitting Multiple Jobs
 
-- [Exercise 1.1: Log in to the local submit machine and look around](htcondor/part1-ex1-login.md)
-- [Exercise 1.2: Experiment with HTCondor commands](htcondor/part1-ex2-commands.md)
-- [Exercise 1.3: Run jobs!](htcondor/part1-ex3-jobs.md)
-- [Exercise 1.4: Read and interpret log files](htcondor/part1-ex4-logs.md)
-- [Exercise 1.5: Determining Resource Needs](htcondor/part1-ex5-request.md)
-- [Exercise 1.6: Remove jobs from the queue](htcondor/part1-ex6-remove.md)
+!!! info "Slides"
+    * Submitting multiple jobs: [pdf](htcondor/files/osgus25-htc-htcondor-multiple-jobs.pdf)
 
-### Bonus Exercises: Job Attributes and Handling
-
-- [Bonus Exercise 1.7: Explore `condor_q`](htcondor/part1-ex7-queue.md)
-- [Bonus Exercise 1.8: Explore `condor_status`](htcondor/part1-ex8-status.md)
-
-## Intro to HTCondor Multiple Job Execution
-
-View the Slides: [pdf](htcondor/files/osgus25-htc-htcondor-multiple-jobs.pdf)
-
-### Intro Exercises 2: Running Many HTC Jobs (Strongly Recommended)
-
-- [Exercise 2.1: Work with input and output files](htcondor/part2-ex1-files.md)
-- [Exercise 2.2: Use `queue N`, `$(Cluster)`, and `$(Process)`](htcondor/part2-ex2-queue-n.md)
-- [Exercise 2.3: Use `queue from` with custom variables](htcondor/part2-ex3-queue-from.md)
-- [Bonus Exercise 2.4: Use `queue matching` with a custom variable](htcondor/part2-ex4-queue-matching.md)
+!!! note "Intro Exercises 2: Running Many HTC Jobs (Strongly Recommended)"
+    - [Exercise 2.1: Work with input and output files](htcondor/part2-ex1-files.md)
+    - [Exercise 2.2: Use `queue N`, `$(Cluster)`, and `$(Process)`](htcondor/part2-ex2-queue-n.md)
+    - [Exercise 2.3: Use `queue from` with custom variables](htcondor/part2-ex3-queue-from.md)
+    - [Bonus Exercise 2.4: Use `queue matching` with a custom variable](htcondor/part2-ex4-queue-matching.md)
 
 ## The Open Science Pool (OSPool)
 

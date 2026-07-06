@@ -46,3 +46,18 @@ nav:
     - Visa requirements:            logistics/visas.md
     - Travel planning:              logistics/travel-planning.md
     - Hotel information:            logistics/hotel.md
+  - Materials:
+    - Overview:                     materials/index.md
+    - Intro to HTCondor:            
+      - "1.1: Log in":              materials/htcondor/part1-ex1-login.md
+      - "1.2: HTCondor commands":   materials/htcondor/part1-ex2-commands.md
+      - "1.3: Run jobs":            materials/htcondor/part1-ex3-jobs.md
+      - "1.4: Interpret log files": materials/htcondor/part1-ex4-logs.md
+      - "1.5: Determine resources": materials/htcondor/part1-ex5-request.md
+      - "1.6: Remove jobs":         materials/htcondor/part1-ex6-remove.md
+      - "1.7: Explore condor_q":    materials/htcondor/part1-ex7-queue.md
+      - "1.8: Explore condor_status:": materials/htcondor/part1-ex8-status.md
+      - "2.1: Input/output files":  materials/htcondor/part2-ex1-files.md
+      - "2.2: Use queue N, $(Cluster), and $(Process)": materials/htcondor/part2-ex2-queue-n.md
+      - "2.3: Use queue from with custom variables": materials/htcondor/part2-ex3-queue-from.md
+      - "2.4: Use queue matching with a custom variable": materials/htcondor/part2-ex4-queue-matching.md

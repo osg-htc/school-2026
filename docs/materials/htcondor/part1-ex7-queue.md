@@ -1,9 +1,3 @@
----
-status: testing
----
-
-<style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
-
 # Bonus HTC Exercise 1.7: Explore condor_q
 
 ## Exercise Goal
