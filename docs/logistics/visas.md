@@ -41,7 +41,7 @@ When you come to Madison, you must bring:
     -   If you entered the U.S. before 30 April 2013, the I-94 should be stapled into your passport — do not remove it!
     -   If you entered the U.S. after 30 April 2013, the I-94 is stored electronically;
         [you can request a copy to print from CBP](https://i94.cbp.dhs.gov/I94/#/recent-search)
-    -   If you are Canadian, you may use a second form of picture ID instead of the I-94 if you did not obtain an I-94.
+    -   **Canadians only:** If you did not obtain an I-94, bring a second form of picture ID
 -   Additional forms specified in the table below:
 
 | If you have this visa | We will also need                            |
