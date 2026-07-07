@@ -179,7 +179,7 @@ All School participants and staff are encourage to attend!
       <td>13:30</td>
       <td>
         Lunch<br>
-        Software groups<br>
+        Software groups and instructor breakout<br>
         <strong>Also:</strong> Return travel documents (~13:20)
       </td>
       <td>-</td>
@@ -268,7 +268,7 @@ All School participants and staff are encourage to attend!
         <br>
         &#9654; <span style="color: rgb(173, 81, 12);">Ian Ross</span>;
         Center for High Throughput Computing<br>
-        <div style="margin-left: 2ex;"><a href="">Using AI models</a></div>
+        <div style="margin-left: 2ex;"><a href="">Best Practices for Programming with AI</a></div>
         &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;
         <br>
         <!--<div style="margin-left: 2ex;"><a href="../materials/showcase/martinez_osgschool.pdf">“Dark Matter, Radio Astronomy, and High Throughput Computing”</a></div>-->
