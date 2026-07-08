@@ -179,7 +179,7 @@ All School participants and staff are encourage to attend!
       <td>13:30</td>
       <td>
         Lunch<br>
-        Software groups<br>
+        Software groups and instructor breakout<br>
         <strong>Also:</strong> Return travel documents (~13:20)
       </td>
       <td>-</td>
@@ -266,9 +266,9 @@ All School participants and staff are encourage to attend!
       <td>
         HTC Showcase Part 1
         <br>
-        &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;
-        <br>
-        <!--<div style="margin-left: 2ex;"><a href="../materials/showcase/OSG_School_SSE_2025-06-25.pptx">“Scaling Virtual Screening to Ultra-Large Virtual Chemical Libraries”</a></div>-->
+        &#9654; <span style="color: rgb(173, 81, 12);">Ian Ross</span>;
+        Center for High Throughput Computing<br>
+        <div style="margin-left: 2ex;"><a href="">Best Practices for Programming with AI</a></div>
         &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;
         <br>
         <!--<div style="margin-left: 2ex;"><a href="../materials/showcase/martinez_osgschool.pdf">“Dark Matter, Radio Astronomy, and High Throughput Computing”</a></div>-->
@@ -505,8 +505,8 @@ All School participants and staff are encourage to attend!
     <tr>
       <td>15:30</td>
       <td>16:30</td>
-      <td>HTC and HTCondor Philosophy</td>
-      <td>TBD</td>
+      <td><span class="before-dot text-light-blue">HTC Philosophy</td>
+      <td>Brian Bockelman</td>
     </tr>
     <tr>
       <td>16:30</td>
