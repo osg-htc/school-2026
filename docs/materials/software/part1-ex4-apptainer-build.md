@@ -16,10 +16,18 @@ Software Exercise 1.4: Build and Use an Apptainer Container
 want to use a container for your jobs and can't find one that has 
 what you need. 
 
-Process Overview
+Process overview
 ----------------
 
-TODO: describe
+In order to build a container, you need to create a specification file, called a 
+"definition file", that incorporates all the files, commands and variables needed 
+to install your software. There are many exercises today showing various definition files. 
+
+You will invoke a build command to actually create the container - reading in the 
+definition file, and creating a container file with the extension `.sif`. 
+
+Once you have a `.sif` container file, you can use it in jobs by adding a single line 
+to your HTCondor submit file. 
 
 What does our code need? 
 -----------------
@@ -73,7 +81,7 @@ when it builds the container image.
 	exercises. The `%post` statement includes our installation commands, including 
 	updating the `pip` and `numpy` packages, and then using `pip` to install `cowsay`.
 
-To learn more about definition files, see [Exercise 3.3](part3-ex3-apptainer-definition.md)
+To learn more about definition files, see [Exercise 2.4](part2-ex4-apptainer-definition.md)
 
 Build the Container
 -------------------

@@ -105,6 +105,3 @@ Apply to Your Work
 
 3. Are there any environment variables that your software is expecting to use?
 If so, should you define them in the `%environment` section, or should you define them for each job?
-
-
-[^1]: This text and previous list taken from [Introduction to Docker](https://carpentries-incubator.github.io/docker-introduction/)

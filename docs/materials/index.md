@@ -36,24 +36,19 @@
 ## Software
 
 !!! abstract "Software Slides"
-	View the Slides: [pdf](software/files/osgs25-software.pdf), [pptx](software/files/osgs25-software.pptx)
+	View the Slides: [pdf](), [pptx]()
 
 !!! note "Software Exercises"
-	- [Exercise 1.1: Run and Explore Apptainer Containers](software/part1-ex1-run-apptainer.md)
-	- [Exercise 1.2: Use Apptainer Containers in OSPool Jobs](software/part1-ex2-apptainer-jobs.md)
-	- [Exercise 1.3: Use Docker Containers in OSPool Jobs](software/part1-ex3-docker-jobs.md)
-	- [Exercise 1.4: Build, Test, and Deploy an Apptainer Container](software/part1-ex4-apptainer-build.md)
-	- [Exercise 1.5: Choose Software Options](software/part1-ex5-pick-an-option.md)
-	- [Exercise 2.1: Build an HTC-Friendly Executable](software/part2-ex1-build-executable.md)
-	- [Exercise 3.1: Create an Apptainer Definition Files](software/part3-ex1-apptainer-recipes.md)
-	- [Exercise 3.2: Build Your Own Docker Container](software/part3-ex2-docker-build.md)
-	- [Exercise 4.1: Download and Use Compiled Software](software/part4-ex1-download.md)
-	- [Exercise 4.2: Use a Wrapper Script To Run Software](software/part4-ex2-wrapper.md)
-	- [Exercise 4.3: Using Arguments With Wrapper Scripts](software/part4-ex3-arguments.md)
-	- [Exercise 5.1: Compiling a Research Software](software/part5-ex1-prepackaged.md)
-	- [Exercise 5.2: Compiling Python and Running Jobs](software/part5-ex2-python.md)
-	- [Exercise 5.3: Using Conda Environments](software/part5-ex3-conda.md)
-	- [Exercise 5.4: Compiling and Running a Simple Code](software/part5-ex4-compiling.md)
+	- 1.1 - Run and Explore Apptainer Containers: materials/software/part1-ex1-run-apptainer.md
+	- 1.2 - Use Apptainer Containers in OSPool Jobs: materials/software/part1-ex2-apptainer-jobs.md
+	- 1.3 - Use Docker Containers in OSPool Jobs: materials/software/part1-ex3-docker-jobs.md
+	- 1.4 - Build and Use an Apptainer Container¶: materials/software/part1-ex4-apptainer-build.md
+	- 2.1 - Choose Software Options: materials/software/part2-ex1-software-strategies.md
+	- 2.2 - Finding Containers: materials/software/part2-ex2-find-containers.md
+	- 2.3 - Apptainer Examples: materials/software/part2-ex3-apptainer-examples.md
+	- 2.4 - Apptainer Definition Files: materials/software/part2-ex4-apptainer-definition.md
+	- 2.5 - Build Your Own Docker Container: materials/software/part2-ex5-docker-build.md
+	- 3.1 - Build an HTC-Friendly Executable: materials/software/part3-ex1-build-executable.md
 
 ## The Open Science Pool (OSPool) (Tuesday)
 

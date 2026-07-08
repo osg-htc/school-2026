@@ -25,8 +25,8 @@ Pick at least one software you want to use on the OSPool as a test subject.
 	software from the list below for the next set of exercises: 
 	
 	* GROMACS
-	* LAMMPS
-	* TBD
+	* minimap2
+	* Pytorch
 
 Using either existing code (if you wrote it) or the download/installation page (if someone 
 else wrote it), try to answer the following questions: 
@@ -141,7 +141,8 @@ existing templates for `conda`, `R` and `Python` based codes.
 	Most of our examples will show how to build apptainer containers, as we think 
 	a) they are easier to build for beginners and b) they work on the OSPool. However, 
 	if you want to be able to use a container on your own computer, or share with 
-	collaborators, Docker containers may be a better option. See 
+	collaborators, Docker containers may be a better option. See [Exercise 2.5](part2-ex5-docker-build.md)
+	for more information. 
 
 Try this third: Container builds with more components
 ------------------
@@ -173,11 +174,13 @@ This approach may not work if:
 </table>
 
 If this is you, we recommend doing two things: 
+
 1. Look at some of the examples from [Exercise 2.3](part2-ex3-apptainer-examples.md), to 
 try to build your own understanding of the pieces of a definition file. 
 1. Then go to [Exercise 2.4](part2-ex4-apptainer-definition.md) and do the exercises there. If 
 you get stuck or have questions, flag down a staff member or talk to a neighbor! 
 1. Add notes to the [Google Doc](https://docs.google.com/document/d/1WpV1mJ8uJQEd6asHUuvWjN28qTss281CPiL-8uG_eL0/edit?tab=t.p5fk07rmi8dk)
+
 
 Apply to Your Work
 ------------------

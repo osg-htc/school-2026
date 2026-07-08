@@ -74,7 +74,7 @@ Now, let's explore a container from the [OSG-Supported List](https://portal.osg-
 1. To run it, use this command: 
 
 		:::console
-		$ apptainer shell /cvmfs/singularity.opensciencegrid.org/htc/ubuntu:22.04
+		$ apptainer shell /cvmfs/singularity.opensciencegrid.org/htc/ubuntu:24.04
 
 	It may take a few minutes to start - don't worry if this happens. 
 

@@ -63,9 +63,7 @@ Now, let's try running that same script inside a container.
 1. For this job, we will use the OSG-provided Ubuntu "Focal" image, as we did in the previous exercise. The `container_image` submit file option will tell HTCondor to use this container for the job: 
 
 		:::file
-		universe = container
-        OSDF_URL = osdf:///TBD
-		container_image = $(OSDF_URL)/TBD
+		container_image = osdf:///osg-public/containers/school2026/ubuntu24.04
    
 1. If the submit file you copied has something like `requirements = (OSGVO_OS_STRING == "RHEL 9")`, remove that. When you use containers, you should not specify an OS in the requirements as that will unnecessarily limit the number of resources you can run on.
 
@@ -76,7 +74,7 @@ Now, let's try running that same script inside a container.
 Experimenting with other containers
 -------------
 
-1. Look at the list of OSG-Supported containers: [OSG Supported Containers](https://portal.osg-htc.org/documentation/htc_workloads/using_software/available-containers-list/)
+1. Look at a list of other OSG-Supported containers: [OSG Supported Containers](https://osdf-client.osg-htc.org/?url=pelican%3A%2F%2Fosg-htc.org%2Fosg-public%2Fcontainers)
 
 1. Try submitting a job that uses one of these containers. Change the executable 
 script to explore different aspects of that container. 
