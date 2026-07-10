@@ -269,8 +269,8 @@ All School participants and staff are encourage to attend!
         &#9654; <span style="color: rgb(173, 81, 12);">Ian Ross</span>;
         Center for High Throughput Computing<br>
         <div style="margin-left: 2ex;"><a href="">Best Practices for Programming with AI</a></div>
-        &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;
-        <br>
+        &#9654; <span style="color: rgb(173, 81, 12);">Spencer Ericksen</span>;
+        Small Molecule Screening Facility<br>
         <!--<div style="margin-left: 2ex;"><a href="../materials/showcase/martinez_osgschool.pdf">“Dark Matter, Radio Astronomy, and High Throughput Computing”</a></div>-->
       </td>
       <td>-</td>
@@ -474,9 +474,11 @@ All School participants and staff are encourage to attend!
       <td>
         HTC Showcase, Part 2
         <br>
-        &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;<br>
+        &#9654; <span style="color: rgb(173, 81, 12);">Jordan Loeffler</span>;
+        Chemical and Biological Engineering<br>
         <!--<div style="margin-left: 2ex;">“Title of talk”</div>-->
-        &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;<br>
+        &#9654; <span style="color: rgb(173, 81, 12);">Annika Pratt</span>;
+        Plant Pathology<br>
         <!--<div style="margin-left: 2ex;">“Title of talk”</div>-->
       </td>
       <td>-</td>
