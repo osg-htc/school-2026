@@ -113,15 +113,15 @@ All School participants and staff are encourage to attend!
       </td>
       <td>-</td>
     </tr>
-    <!-- <tr>
-      <td>19:00</td>
-      <td>20:30</td>
+    <tr>
+      <td>18:30</td>
+      <td>20:00</td>
       <td>
-        <span class="before-dot text-orange">Evening work session (optional)</span><br>
+        <span class="before-dot text-light-orange">Evening work session (optional)</span><br>
         Memorial Union – Board Room (3rd Floor East)
       </td>
-      <td>Andrew, Tim C.</td>
-    </tr>-->
+      <td>Christina, Tim C.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -218,6 +218,15 @@ All School participants and staff are encourage to attend!
         <span class="before-dot text-green">End of day wrap up</span><br>
       </td>
       <td>-</td>
+    </tr>
+    <tr>
+      <td>18:30</td>
+      <td>20:00</td>
+      <td>
+        <span class="before-dot text-light-orange">Evening work session (optional)</span><br>
+        Memorial Union – Board Room (3rd Floor East)
+      </td>
+      <td>Amber, Andrew</td>
     </tr>
   </tbody>
 </table>
@@ -399,6 +408,15 @@ All School participants and staff are encourage to attend!
         <span class="before-dot text-green">End of day wrap up</span><br>
       </td>
       <td>-</td>
+    </tr>
+    <tr>
+      <td>18:30</td>
+      <td>20:00</td>
+      <td>
+        <span class="before-dot text-light-orange">Evening work session (optional)</span><br>
+        Memorial Union – Park View (4th Floor)
+      </td>
+      <td>TBD, Tim C.</td>
     </tr>
   </tbody>
 </table>
