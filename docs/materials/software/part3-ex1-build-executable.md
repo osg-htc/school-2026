@@ -18,7 +18,7 @@ Setup
 1. Download the materials for this exercise using
 
 		:::console
-		$ pelican object get osdf:///osg-public/school/contexts.tar.gz ./
+		$ pelican object get osdf:///osg-public/school/2026/contexts.tar.gz ./
 		$ tar -xzf contexts.tar.gz
 
 1. There are two scripts included in the materials: `word-variations.py` and `word-contexts.py`.

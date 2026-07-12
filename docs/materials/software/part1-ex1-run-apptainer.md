@@ -27,7 +27,7 @@ Access Point as we work with containers.
 First, download the `apptainer-setup.sh` script:
 
 ```
-pelican object get osdf:///osg-public/school/apptainer-setup.sh ./
+pelican object get osdf:///osg-public/school/2026/apptainer-setup.sh ./
 ```
 
 Then run the script using this command:

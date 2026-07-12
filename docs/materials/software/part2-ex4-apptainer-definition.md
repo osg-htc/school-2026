@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Software Exercise 2.3: The Apptainer Definition File Structure
+Software Exercise 2.4: The Apptainer Definition File Structure
 ============================================================
 
 **Objective**: Describe each major section of an Apptainer Definition file and how 

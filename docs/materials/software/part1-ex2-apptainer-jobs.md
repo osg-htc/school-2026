@@ -63,7 +63,7 @@ Now, let's try running that same script inside a container.
 1. For this job, we will use the OSG-provided Ubuntu "Focal" image, as we did in the previous exercise. The `container_image` submit file option will tell HTCondor to use this container for the job: 
 
 		:::file
-		container_image = osdf:///osg-public/containers/school2026/ubuntu24.04
+		container_image = osdf:///osg-public/school/2026/ubuntu24.04.sif
    
 1. If the submit file you copied has something like `requirements = (OSGVO_OS_STRING == "RHEL 9")`, remove that. When you use containers, you should not specify an OS in the requirements as that will unnecessarily limit the number of resources you can run on.
 
