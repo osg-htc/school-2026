@@ -5,14 +5,13 @@
 !!! abstract "Welcome Slides"
 	View the slides: [pdf](welcome/files/TODO)
 
-## Intro to HTC and HTCondor Job Execution
+!!! abstract "Introduction to High Throughput Computing"
+	View the slides: [pdf](welcome/files/osgs26-htc-intro.pdf)
 
-!!! abstract "Introductory Slides"
-	- Intro to HTC: [pdf](htcondor/files/TODO)
-	- Intro to HTCondor: TBD
+## Intro to HTCondor Job Execution
 
-!!! example "HTC worksheet"
-	Worksheet: [pdf](htcondor/files/HTC-List-Of-Jobs.pdf) or [Google Drive](https://docs.google.com/presentation/d/1USA6-qNur1Aa41pdvugJ7GqRKwHwnabTQ3dHVWtrlVY/edit?slide=id.g36a288fbaf8_0_25#slide=id.g36a288fbaf8_0_25)
+!!! abstract "HTCondor: Introductory Slides"
+	- View the slides: [pdf]()
 
 !!! note "Exercises: Intro to HTCondor"
 	- [Exercise 1.1: Log in to the local submit machine and look around](htcondor/part1-ex1-login.md)
@@ -33,6 +32,10 @@
 	- [Exercise 2.3: Use `queue from` with custom variables](htcondor/part2-ex3-queue-from.md)
 	- [Bonus Exercise 2.4: Use `queue matching` with a custom variable](htcondor/part2-ex4-queue-matching.md)
  
+!!! example "HTC worksheet"
+	Worksheet: [pdf](htcondor/files/HTC-Workflow-Planning.pdf) or [Google Drive](https://docs.google.com/presentation/d/1USA6-qNur1Aa41pdvugJ7GqRKwHwnabTQ3dHVWtrlVY/)
+
+
 ## Software
 
 !!! abstract "Software Slides"
@@ -50,7 +53,7 @@
 	- 2.5 - Build Your Own Docker Container: materials/software/part2-ex5-docker-build.md
 	- 3.1 - Build an HTC-Friendly Executable: materials/software/part3-ex1-build-executable.md
 
-## The Open Science Pool (OSPool) (Tuesday)
+## The Open Science Pool (OSPool)
 
 !!! abstract "OSPool Slides"
 	View the slides: [pdf](ospool/files/osgs25-day2-part1-osg-timc.pdf)
