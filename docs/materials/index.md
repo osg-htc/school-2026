@@ -39,19 +39,19 @@
 ## Software
 
 !!! abstract "Software Slides"
-	View the Slides: [pdf](), [pptx]()
+	View the Slides: [pdf]()
 
 !!! note "Software Exercises"
-	- 1.1 - Run and Explore Apptainer Containers: materials/software/part1-ex1-run-apptainer.md
-	- 1.2 - Use Apptainer Containers in OSPool Jobs: materials/software/part1-ex2-apptainer-jobs.md
-	- 1.3 - Use Docker Containers in OSPool Jobs: materials/software/part1-ex3-docker-jobs.md
-	- 1.4 - Build and Use an Apptainer Container¶: materials/software/part1-ex4-apptainer-build.md
-	- 2.1 - Choose Software Options: materials/software/part2-ex1-software-strategies.md
-	- 2.2 - Finding Containers: materials/software/part2-ex2-find-containers.md
-	- 2.3 - Apptainer Examples: materials/software/part2-ex3-apptainer-examples.md
-	- 2.4 - Apptainer Definition Files: materials/software/part2-ex4-apptainer-definition.md
-	- 2.5 - Build Your Own Docker Container: materials/software/part2-ex5-docker-build.md
-	- 3.1 - Build an HTC-Friendly Executable: materials/software/part3-ex1-build-executable.md
+	- [Exercise 1.1 - Run and Explore Apptainer Containers](software/part1-ex1-run-apptainer.md)
+	- [Exercise 1.2 - Use Apptainer Containers in OSPool Jobs](software/part1-ex2-apptainer-jobs.md)
+	- [Exercise 1.3 - Use Docker Containers in OSPool Jobs](software/part1-ex3-docker-jobs.md)
+	- [Exercise 1.4 - Build and Use an Apptainer Container](software/part1-ex4-apptainer-build.md)
+	- [Exercise 2.1 - Choose Software Options](software/part2-ex1-software-strategies.md)
+	- [Exercise 2.2 - Finding Containers](software/part2-ex2-find-containers.md)
+	- [Exercise 2.3 - Apptainer Examples](software/part2-ex3-apptainer-examples.md)
+	- [Exercise 2.4 - Apptainer Definition Files](software/part2-ex4-apptainer-definition.md)
+	- [Exercise 2.5 - Build Your Own Docker Container](software/part2-ex5-docker-build.md)
+	- [Exercise 3.1 - Build an HTC-Friendly Executable](software/part3-ex1-build-executable.md)
 
 ## The Open Science Pool (OSPool)
 
