@@ -863,6 +863,9 @@ Let’s see how it works:</p>
 <li>Pass 1 million (<code>1000000</code>) as the command line argument to <code>mcpi.py</code></li>
 <li>Make sure to include <code>log</code>, <code>output</code>, and <code>error</code> (with filenames like <code>mcpi.log</code>), and <code>request_*</code> lines</li>
 <li>At the end of the file, write <code>queue 3</code> instead of just <code>queue</code> ("queue 3 jobs" vs. "queue a job").</li>
+<li>Add this line to run it inside of a container for a consistent software environment. We'll talk about containers on Tuesday!
+    <div class="highlight"><pre><span></span><code>container_image = /cvmfs/singularity.opensciencegrid.org/htc/ubuntu:24.04
+</code></pre></div></li>
 </ul>
 </li>
 <li>
