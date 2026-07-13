@@ -3,7 +3,7 @@
 ## School Overview and Intro
 
 !!! abstract "Welcome Slides"
-	View the slides: [coming soon]()
+	View the slides: [pdf](welcome/files/osgs26-day1-part1-welcome.pdf)
 
 !!! abstract "Introduction to High Throughput Computing"
 	View the slides: [pdf](welcome/files/osgs26-htc-intro.pdf)
