@@ -91,7 +91,7 @@ To submit this program with a collection of two variable values for each run, on
 1.  Download and unpack some books from Project Gutenberg:
 
         :::console
-        [username@ap40]$ wget https://osg-htc.org/school-2026/docs/materials/htcondor/files/books.tar.gz
+        [username@ap40]$ wget https://osg-htc.org/school-2026/materials/htcondor/files/books.tar.gz
         [username@ap40]$ tar -xzvf books.tar.gz
 
 1.  Create a new submit file (or base it off a previous one!) named `wordcount-top.sub` with **memory and disk requests of 20 MB.**
