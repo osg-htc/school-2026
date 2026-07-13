@@ -938,21 +938,15 @@ This is because the submit file is a simple text file that we are using to pass 
 <span class="go">6</span>
 </code></pre></div>
 <p><code>multiply.sh</code> is the <em>executable</em> and <code>1 2 3</code> are the <em>arguments</em>.</p>
-<p>In the submit file, we can specify this in two ways. View the two examples in the tabs.</p>
-<p>=== "Option 1: Using <code>shell</code>"</p>
-<div class="codehilite"><pre><span></span><code>``` file
-shell = ./multiply.sh 1 2 3
+<p>In the submit file, we can specify this in two ways.</p>
+<p><strong>Option 1:</strong> Using <code>shell</code></p>
+<div class="highlight"><pre><span></span><code>shell = ./multiply.sh 1 2 3
 transfer_input_files = multiply.sh
-```
 </code></pre></div>
-
-<p>=== "Option 2: Using <code>executable</code> and <code>arguments</code>"</p>
-<div class="codehilite"><pre><span></span><code>``` file
-executable = multiply.sh
+<p><strong>Option 2:</strong> Using <code>executable</code> and <code>arguments</code></p>
+<div class="highlight"><pre><span></span><code>executable = multiply.sh
 arguments = 1 2 3
-```
 </code></pre></div>
-
 <ul>
 <li>
 <p>Note that the <code>shell</code> example is written <em>exactly</em> how you might execute the task on your own computer. You <em>must</em> transfer the executable script using <code>transfer_input_files</code>, if you use this option.</p>
