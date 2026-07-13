@@ -14,8 +14,7 @@ markdown_extensions:
   - meta
   - pymdownx.details
   - pymdownx.snippets:
-      base_path:
-        - docs/materials/data
+      base_path: docs/materials/data
   - toc:
       permalink: True
   - footnotes
