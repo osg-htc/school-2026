@@ -35,15 +35,9 @@ All School participants and staff are encourage to attend!
     </tr>
     <tr>
       <td>9:15</td>
-      <td>9:30</td>
+      <td>9:45</td>
       <td><span class="before-dot text-light-blue">Lecture: Introduction to High Throughput Computing</span></td>
       <td>Christina</td>
-    </tr>
-    <tr>
-      <td>9:30</td>
-      <td>9:45</td>
-      <td><span class="before-dot text-pink">Exercise: Scaling Out Computing Worksheet</span></td>
-      <td>-</td>
     </tr>
     <tr>
       <td>9:45</td>
@@ -98,9 +92,14 @@ All School participants and staff are encourage to attend!
     </tr> 
     <tr>
       <td>15:15</td>
+      <td>15:30</td>
+      <td><span class="before-dot text-pink">Exercise: Scaling Out Computing Worksheet</span></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>15:30</td>
       <td>16:45</td>
       <td>
-        <span class="before-dot text-pink">Exercises: Goals and unfinished exercises</span><br>
         <span class="before-dot text-orange">Individual consultations</span>
       </td>
       <td>staff</td>
