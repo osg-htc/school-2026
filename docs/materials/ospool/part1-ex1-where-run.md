@@ -42,8 +42,8 @@ To start, you will reuse some basic HTCondor skills from the HTC exercises:
 1.  Download the script and associated data:
 
         :::console
-        $ osdf object get /TO-BE-UPDATED/locate-ospool-job ./
-        $ osdf object get /TO-BE-UPDATED/locations.tsv ./
+        $ osdf object get osdf:///osg-public/school/2026/locate-ospool-job ./
+        $ osdf object get osdf:///osg-public/school/2026/locations.tsv ./
 
     You will be using `locate-ospool-job` as your executable and `locations.tsv` as an input file.
 
