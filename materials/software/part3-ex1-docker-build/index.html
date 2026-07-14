@@ -1038,7 +1038,7 @@ the following contents: </p>
 # Always use a specific tag like &quot;4.10.3&quot;, never &quot;latest&quot;!
 # The version referenced by &quot;latest&quot; can change, so the build will be 
 # more stable when building from a specific version tag. 
-FROM continuumio/miniconda3:4.10.3
+FROM continuumio/miniconda3:26.3.2
 
 # Use RUN to execute commands inside the image as it is being built up.
 RUN conda install --yes numpy
@@ -1057,21 +1057,21 @@ the <a href="https://docs.docker.com/engine/reference/builder/">Docker documenta
 </li>
 <li>
 <p>Note that our container is starting from an existing container 
-<code>continuumio/miniconda3:4.10.3</code>. This container is produced by the <code>continuumio</code> 
-organization; the number <code>4.10.3</code> indicates the container version. When we create our 
+<code>continuumio/miniconda3:26.3.2</code>. This container is produced by the <code>continuumio</code> 
+organization; the number <code>26.3.2</code> indicates the container version. When we create our 
 new container, we will want to use a similar naming scheme of: </p>
 <div class="codehilite"><pre><span></span><code>USERNAME/CONTAINER:VERSIONTAG
 </code></pre></div>
 
 <p>In what follows, you will want to replace <code>USERNAME</code> with your DockerHub user name. 
 The <code>CONTAINER</code> name and <code>VERSIONTAG</code> are your choice; in what follows, we will 
-use <code>py3-numpy</code> as the container name and <code>2024-08</code> as the version tag. </p>
+use <code>py3-numpy</code> as the container name and <code>2026-07</code> as the version tag. </p>
 </li>
 <li>
 <p>To build and name the new container, open a command line window on your computer 
 where you can run Docker commands. Use the <code>cd</code> command to change your working directory 
 to the build directory with the <code>Dockerfile</code> inside. </p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>docker build -t USERNAME/py3-numpy:2024-08 .
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>docker build -t USERNAME/py3-numpy:2026-07 .
 </code></pre></div>
 
 <p>Note the <code>.</code> at the end of the command! This indicates that we're using the current 
@@ -1089,7 +1089,7 @@ elsewhere, it needs to be added to a <strong>public</strong> registry like Docke
 <li>
 <p>To put your container image in Docker Hub, use the <code>docker push</code> command on the 
 command line:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>docker push USERNAME/py3-numpy:2024-08
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>docker push USERNAME/py3-numpy:2026-07
 </code></pre></div>
 
 <p>If the push doesn't work, you may need to run <code>docker login</code> first, enter your 
