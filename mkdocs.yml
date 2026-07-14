@@ -79,8 +79,8 @@ nav:
       - 2.2 - Finding Containers: materials/software/part2-ex2-find-containers.md
       - 2.3 - Apptainer Examples: materials/software/part2-ex3-apptainer-examples.md
       - 2.4 - Apptainer Definition Files: materials/software/part2-ex4-apptainer-definition.md
-      - 2.5 - Build Your Own Docker Container: materials/software/part2-ex5-docker-build.md
-      - 3.1 - Build an HTC-Friendly Executable: materials/software/part3-ex1-build-executable.md
+      - 3.1 - Build Your Own Docker Container: materials/software/part1-ex1-docker-build.md
+      - 4.1 - Build an HTC-Friendly Executable: materials/software/part4-ex1-build-executable.md
 #    - Researching the OSPool:
 #      - 1.1 - Where do jobs run?: materials/ospool/part1-ex1-where-run.md
 #      - 1.2 - How much can I get?: materials/ospool/part1-ex2-capacity.md
