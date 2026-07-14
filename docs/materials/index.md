@@ -52,8 +52,9 @@
 	- [Exercise 2.2 - Finding Containers](software/part2-ex2-find-containers.md)
 	- [Exercise 2.3 - Apptainer Examples](software/part2-ex3-apptainer-examples.md)
 	- [Exercise 2.4 - Apptainer Definition Files](software/part2-ex4-apptainer-definition.md)
-	- [Exercise 2.5 - Build Your Own Docker Container](software/part2-ex5-docker-build.md)
-	- [Exercise 3.1 - Build an HTC-Friendly Executable](software/part3-ex1-build-executable.md)
+	- [Exercise 2.5 - Example of Manual Installation](software/part2-ex5-manual-install.md)
+	- [Exercise 3.1 - Build Your Own Docker Container](software/part3-ex1-docker-build.md)
+	- [Exercise 4.1 - Build an HTC-Friendly Executable](software/part4-ex1-build-executable.md)
 
 <!--
 ## The Open Science Pool (OSPool)
