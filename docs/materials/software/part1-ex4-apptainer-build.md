@@ -68,18 +68,14 @@ when it builds the container image.
 
 		:::file
 		Bootstrap: docker
-		From: hub.opensciencegrid.org/htc/ubuntu:24.04
-
+		From: python:3.13
+		
 		%post
-			apt-get update -y
-			apt-get install -y \
-					python3-pip \
-					python3-numpy
 			python3 -m pip install cowsay
 
-	Note that we are starting with the same `ubuntu` base we used in previous 
-	exercises. The `%post` statement includes our installation commands, including 
-	updating the `pip` and `numpy` packages, and then using `pip` to install `cowsay`.
+	Note that we are starting with an existing Python container from 
+	online (on Docker Hub). The `%post` statement includes our installation 
+	commands: using `pip` to install `cowsay`.
 
 To learn more about definition files, see [Exercise 2.4](part2-ex4-apptainer-definition.md)
 

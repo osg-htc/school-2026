@@ -43,7 +43,6 @@
 
 <!--View the Slides: [pdf](software/files/osgs26-software.pdf) [pptx](software/files/osgs26-software.pptx)-->
 
-<!--
 !!! note "Software Exercises"
 	- [Exercise 1.1 - Run and Explore Apptainer Containers](software/part1-ex1-run-apptainer.md)
 	- [Exercise 1.2 - Use Apptainer Containers in OSPool Jobs](software/part1-ex2-apptainer-jobs.md)
@@ -56,7 +55,7 @@
 	- [Exercise 2.5 - Build Your Own Docker Container](software/part2-ex5-docker-build.md)
 	- [Exercise 3.1 - Build an HTC-Friendly Executable](software/part3-ex1-build-executable.md)
 
-
+<!--
 ## The Open Science Pool (OSPool)
 
 !!! abstract "OSPool Slides"

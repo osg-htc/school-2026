@@ -71,14 +71,6 @@ Now, let's try running that same script inside a container.
 
 1. Submit the job and read the standard output file when it completes. 
 
-Experimenting with other containers
--------------
-
-1. Look at a list of other OSG-Supported containers: [OSG Supported Containers](https://osdf-client.osg-htc.org/?url=pelican%3A%2F%2Fosg-htc.org%2Fosg-public%2Fcontainers)
-
-1. Try submitting a job that uses one of these containers. Change the executable 
-script to explore different aspects of that container. 
-
 Apply to Your Work
 ------------------
 
