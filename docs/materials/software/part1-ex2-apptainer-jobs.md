@@ -21,7 +21,7 @@ First, let's run a job without a container to see what the typical job environme
 1. Create a bash script named `job-env.sh` with the following lines: 
 
 		:::bash
-		#!/bin/bash
+		#!/bin/sh
 	
 		grep "PRETTY_NAME" /etc/os-release 
 		python3 --version
