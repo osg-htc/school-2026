@@ -59,7 +59,7 @@ Side-quest: Create an executable
 ---------------------
 
 Regardless of which approach you use, check out 
-the [Build an HTC-Friendly Executable](part3-ex1-build-executable.md) exercise
+the [Build an HTC-Friendly Executable](part4-ex1-build-executable.md) exercise
 for some tips on how to make your script more robust and easy to use with multiple jobs. 
 
 Try this first: existing container
@@ -141,7 +141,7 @@ existing templates for `conda`, `R` and `Python` based codes.
 	Most of our examples will show how to build apptainer containers, as we think 
 	a) they are easier to build for beginners and b) they work on the OSPool. However, 
 	if you want to be able to use a container on your own computer, or share with 
-	collaborators, Docker containers may be a better option. See [Exercise 2.5](part2-ex5-docker-build.md)
+	collaborators, Docker containers may be a better option. See [Exercise 3.1](part3-ex1-docker-build.md)
 	for more information. 
 
 Try this third: Container builds with more components
