@@ -39,9 +39,8 @@
 ## Software
 
 !!! abstract "Software Slides"
-	View the Slides: [coming soon]()
+	View the Slides: [pdf](software/files/osgs26-software.pdf) [pptx](software/files/osgs26-software.pptx)
 
-<!--View the Slides: [pdf](software/files/osgs26-software.pdf) [pptx](software/files/osgs26-software.pptx)-->
 
 !!! note "Software Exercises"
 	- [Exercise 1.1 - Run and Explore Apptainer Containers](software/part1-ex1-run-apptainer.md)

@@ -7,7 +7,7 @@ status: testing
   pre strong { font-style: normal; font-weight: bold; color: \#008; }
 </style>
 
-Software Exercise 2.1 - Choose Software Options
+Software Exercise 2.1: Choose Software Options
 ============================================================
 
 **Objective**: Decide how you want to make your software portable

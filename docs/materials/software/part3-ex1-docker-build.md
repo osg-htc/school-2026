@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: #008; } </style>
 
-Software Exercise 2.5: Build Your Own Docker Container (Optional)
+Software Exercise 3.1: Build Your Own Docker Container (Optional)
 ====================================
 
 **Objective**: Build a custom Docker container with `numpy` and use it in a job
