@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://osg-htc.org/school-2026/materials/software/part3-ex1-build-executable/">
+        <link rel="canonical" href="https://osg-htc.org/school-2026/materials/software/part2-ex5-manual-install/">
       
       <link rel="icon" href="../../../assets/OSG_Logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>3.1 - Build an HTC-Friendly Executable - OSG School 2026</title>
+        <title>2.5 - Example of Manual Installation - OSG School 2026</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#software-exercise-21-build-an-htc-friendly-executable" class="md-skip">
+        <a href="#software-exercise-25-example-of-manual-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3.1 - Build an HTC-Friendly Executable
+              2.5 - Example of Manual Installation
             
           </span>
         </div>
@@ -706,18 +706,6 @@
             
   
   
-  
-    <li class="md-nav__item">
-      <a href="../part2-ex5-docker-build/" class="md-nav__link">
-        2.5 - Build Your Own Docker Container
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
     
   
   
@@ -729,12 +717,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          3.1 - Build an HTC-Friendly Executable
+          2.5 - Example of Manual Installation
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        3.1 - Build an HTC-Friendly Executable
+        2.5 - Example of Manual Installation
       </a>
       
         
@@ -751,23 +739,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
+  <a href="#our-software-example" class="md-nav__link">
+    Our software example
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-a-header" class="md-nav__link">
-    Add a Header
+  <a href="#finding-files-for-installation" class="md-nav__link">
+    Finding files for installation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#incorporate-arguments" class="md-nav__link">
-    Incorporate Arguments
+  <a href="#adding-blast-to-a-container" class="md-nav__link">
+    Adding BLAST to a container
   </a>
+  
+    <nav class="md-nav" aria-label="Adding BLAST to a container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choose-a-base-image" class="md-nav__link">
+    Choose a base image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#include-the-files" class="md-nav__link">
+    Include the files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unzip-in-a-certain-location" class="md-nav__link">
+    Unzip in a certain location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provide-information-about-location" class="md-nav__link">
+    Provide information about location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-and-test" class="md-nav__link">
+    Build and test
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -782,6 +811,30 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part3-ex1-docker-build/" class="md-nav__link">
+        3.1 - Build Your Own Docker Container
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part4-ex1-build-executable/" class="md-nav__link">
+        4.1 - Build an HTC-Friendly Executable
+      </a>
     </li>
   
 
@@ -910,23 +963,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    Setup
+  <a href="#our-software-example" class="md-nav__link">
+    Our software example
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-a-header" class="md-nav__link">
-    Add a Header
+  <a href="#finding-files-for-installation" class="md-nav__link">
+    Finding files for installation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#incorporate-arguments" class="md-nav__link">
-    Incorporate Arguments
+  <a href="#adding-blast-to-a-container" class="md-nav__link">
+    Adding BLAST to a container
   </a>
+  
+    <nav class="md-nav" aria-label="Adding BLAST to a container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choose-a-base-image" class="md-nav__link">
+    Choose a base image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#include-the-files" class="md-nav__link">
+    Include the files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unzip-in-a-certain-location" class="md-nav__link">
+    Unzip in a certain location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provide-information-about-location" class="md-nav__link">
+    Provide information about location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-and-test" class="md-nav__link">
+    Build and test
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -952,201 +1046,145 @@
                 
                 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-<h1 id="software-exercise-21-build-an-htc-friendly-executable">Software Exercise 2.1 Build an HTC-Friendly Executable<a class="headerlink" href="#software-exercise-21-build-an-htc-friendly-executable" title="Permanent link">&para;</a></h1>
-<p><strong>Objective</strong>: Modify an existing script to include arguments and headers. </p>
-<p><strong>Why learn this?</strong>: A little bit of preparation can make it easier to reuse the 
-same script over and over to run many jobs. </p>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<h1 id="software-exercise-25-example-of-manual-installation">Software Exercise 2.5: Example of manual installation<a class="headerlink" href="#software-exercise-25-example-of-manual-installation" title="Permanent link">&para;</a></h1>
+<p><strong>Objective</strong>: Identify all the steps need to add software to a container, when 
+the software does <em>not</em> have a standard "managed" install process. </p>
+<p><strong>Why learn this?</strong>: Some software is only available through downloading files and 
+adding them to a system manually. This is the approach of last resort - if you can 
+use a package manager or other tool for the installation - do that first! </p>
+<h2 id="our-software-example">Our software example<a class="headerlink" href="#our-software-example" title="Permanent link">&para;</a></h2>
+<p>The software we will be using for this example is a common tool for
+aligning genome and protein sequences against a
+reference database, the BLAST program. In this case, we're interested 
+specifically in the <code>blastp</code> program. </p>
+<h2 id="finding-files-for-installation">Finding files for installation<a class="headerlink" href="#finding-files-for-installation" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>Download the materials for this exercise using</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>pelican object get osdf:///osg-public/school/2026/contexts.tar.gz ./
-<span class="gp">$ </span>tar -xzf contexts.tar.gz
-</code></pre></div>
-
-</li>
-<li>
-<p>There are two scripts included in the materials: <code>word-variations.py</code> and <code>word-contexts.py</code>.
-The first one will identify "trivial" variations (capitalization, punctuation) on the provided word.
-For example:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>./word-variations.py Alice_in_Wonderland.txt Dodo
-</code></pre></div>
-
-<p>The second one expands the detection of the provided word to report an additional word before
-and after the provided word, for example:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>./word-contexts.py Alice_in_Wonderland.txt Dodo
-</code></pre></div>
-
-</li>
-<li>
-<p>We want to use these two scripts to find all the contexts where a word was used, regardless of
-the "trivial" variations. To do so, we first save the results of the <code>word-variations.py</code> command
-to a file, then use the contents of that file with the <code>word-contexts.py</code> command (also saving the
-output to file):</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>./word-variations.py Alice_in_Wonderland.txt Dodo &gt; variations.Dodo.txt
-<span class="gp">$ </span>./word-contexts.py Alice_in_Wonderland.txt variations.Dodo.txt &gt; contexts.Dodo.txt
-</code></pre></div>
-
-</li>
-</ol>
-<h2 id="add-a-header">Add a Header<a class="headerlink" href="#add-a-header" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>To create a basic script, you can put the above commands into a file 
-called <code>get_contexts.sh</code>. To make it clear what language we expect to use to 
-run the script, we will add the following header on the first line: <code>`#!/bin/bash</code></p>
-<div class="codehilite"><pre><span></span><code>#!/bin/bash
-
-./word-variations.py Alice_in_Wonderland.txt Dodo &gt; variations.Dodo.txt
-./word-contexts.py Alice_in_Wonderland.txt variations.Dodo.txt &gt; contexts.Dodo.txt
-</code></pre></div>
-
-<p>The "header" of <code>#!/bin/bash</code> will tell the computer that this is a bash shell script 
-and can be run in the same way that  you would run individual commands on the command line. 
-We use <code>/bin/bash</code> instead of just <code>bash</code> because that is the full path to the <code>bash</code> 
-software file.</p>
-<div class="admonition note">
-<p class="admonition-title">Other languages</p>
-<p>We can use the same principle for any scripting language. For example, the header for a Python script 
-could be either <code>#!/usr/bin/python3</code> or <code>#!/usr/bin/env python3</code>. Similar logic works 
-for perl, R, julia and other scripting languages. </p>
+<p>Search the internet for the BLAST software.  Searches might include
+"blast bioinformatics executable or "download blast software".  Hopefully these
+searches will lead you to a BLAST website page that looks like this:</p>
+<p><img alt="BLAST landing page" src="../files/blast-landing-page.png" /></p>
+<p>Note that the URL for this webpage starts with <code>blast.ncbi.nlm.nih.gov</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Check your sources!</p>
+<p>You should always be careful downloading software from the internet!
+Only download software from a trusted source and be on the lookout for
+forfeits.</p>
+<p>Feel free to ask a facilitator if you are not sure if you can trust a software source.</p>
 </div>
 </li>
 <li>
-<p>Can you now run the script? </p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>./get_contexts.sh
+<p>Click on the title that says <a href="../files/blast-landing-dl.png">"Download
+BLAST"</a> and then look for the
+link that has the <a href="../files/blast-download-landing2.png">latest installation and source
+code</a>.  </p>
+</li>
+<li>
+<p>You should end up on a page with a list of each version of BLAST that is available for
+different operating systems.</p>
+<p><img alt="Blast download list" src="../files/blast-download-list.png" /></p>
+<p>We could download the source and compile it ourselves, but instead,
+we're going to use one of the pre-built binaries.  <strong>Before proceeding,
+look at the list of downloads and try to determine which one you want.</strong></p>
+</li>
+<li>
+<p>Based on our operating system, we want to use the Linux binary,
+which is labelled with the <code>x64-linux</code> suffix. <strong>Right click on the filename
+and then click "Copy link address".</strong></p>
+</li>
+<li>
+<p>On the Access Point, create a directory for
+this exercise. Then download the appropriate <code>tar.gz</code> file and un-tar/decompress it
+it. If you want to do this all from the command line, the sequence will 
+look like this (using <code>wget</code> as the download command.) <strong>Use the link you copied from
+the previous step.</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.17.0+-x64-linux.tar.gz
+<span class="gp">$ </span>tar -xzf ncbi-blast-2.17.0+-x64-linux.tar.gz
 </code></pre></div>
 
 </li>
 <li>
-<p>This gives "permission denied." Let's add executable permissions to the script 
-and try again: </p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>chmod +x get_contexts.sh
-<span class="gp">$ </span>./get_contexts.sh
-</code></pre></div>
-
+<p>We're going to be using the <code>blastp</code> binary in our job. Where is it
+in the directory you just decompressed?</p>
 </li>
 </ol>
-<h2 id="incorporate-arguments">Incorporate Arguments<a class="headerlink" href="#incorporate-arguments" title="Permanent link">&para;</a></h2>
-<p>Let's say that you want to find the contexts for every occurrence of a character's name.
-Can you imagine trying to run this script for each name? It would be tedious
-to edit it for each one, especially since the name is used in multiple places in the script. 
-And if you want to use this script to analyze other texts, you'd also have to change the filename.</p>
-<p>Instead of manually editing the <code>get_contexts.sh</code> for each time we want to run a different analysis,
-we should add arguments to the script to make it easy to reuse. 
-Any information in a script or executable that is going to change or vary across 
-jobs or analyses should likely be turned into an argument that is specified on the command line. </p>
+<h2 id="adding-blast-to-a-container">Adding BLAST to a container<a class="headerlink" href="#adding-blast-to-a-container" title="Permanent link">&para;</a></h2>
+<p>Now the fun begins! To add <code>blastp</code> to a container, we need to: </p>
 <ol>
-<li>
-<p>In our example above, which pieces of the script are likely to change or vary? </p>
-</li>
-<li>
-<p>The name of the input file (<code>Alice_in_Wonderland.txt</code>) and the name to detect (<code>Dodo</code>) should 
-be turned into arguments. Can you envision what our script should look like if we ran it 
-with input arguments? </p>
-</li>
-<li>
-<p>Let's say we want to be able to run the following command: </p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>./get_contexts.sh Alice_in_Wonderland.txt Dodo
-</code></pre></div>
-
-<p>In order to get arguments from the command line into the script, you have 
-to use special variables in the script. In bash, these are <code>$1</code> (for the first 
-argument), <code>$2</code> (for the second argument) and so on. Try to figure out where 
-these should go in our <code>get_contexts.sh</code> script. </p>
-<div class="admonition note">
-<p class="admonition-title">Other Languages</p>
-<p>Each language is going to have its own syntax for reading command line 
-arguments into the script. In Python, <code>sys.argv</code> is a basic method, and more 
-advanced libraries like <code>argparse</code> can be used. In R, the <code>commandArgs()</code> function 
-can do this. Google "command line arguments in ______" to find the right 
-syntax for your language of choice!</p>
-</div>
-</li>
-<li>
-<p>A first pass at adding arguments might look like this: </p>
-<div class="codehilite"><pre><span></span><code>#!/bin/bash
-
-./word-variations.py $1 $2 &gt; variations.$2.txt
-./word-contexts.py $1 variations.$2.txt &gt; contexts.$2.txt
-</code></pre></div>
-
-<p>Try running it as described above. Does it work? </p>
-</li>
-<li>
-<p>While we now have arguments, we have lost some of the readability of our script. The 
-numbers <code>$1</code> and <code>$2</code> are not very meaningful in themselves! Let's rewrite the script to 
-assign the arguments to meaningful variable names: </p>
-<div class="codehilite"><pre><span></span><code>#!/bin/bash
-
-FILENAME=&quot;${1}&quot;
-TARGET_WORD=&quot;${2}&quot;
-
-./word-variations.py ${FILENAME} ${TARGET_WORD} &gt; variations.${TARGET_WORD}.txt
-./word-contexts.py ${FILENAME} variations.${TARGET_WORD}.txt &gt; contexts.${TARGET_WORD}.txt
-</code></pre></div>
-
-<div class="admonition note">
-<p class="admonition-title">Why curly brackets?</p>
-<p>You'll notice above that we started using curly brackets around our variables. 
-While you technically don't need them (<code>$TARGET_WORD</code> would also be fine), using 
-them makes the name of the variable (compared to other text) completely clear. 
-This is especially useful when combining variables with underscores, and in the
-case of specifying the numerical arguments (<code>$1</code>, <code>$2</code>, etc.) the curly braces
-allow you to go above a value of <code>9</code> without error.</p>
-</div>
-</li>
-<li>
-<p>There is one final place where we could optimize this script. The output filename
-<code>variations.${TARGET_WORD}.txt</code> is used in multiple places in the script. If we decide we
-want to change the naming convention of the output file, we'd have to remember to edit 
-all the locations where that name is used, which is asking for typos. Instead, we 
-should use a variable for referring to the output filename, so that we only ever need to change
-one spot in the file. We can do a similar thing for the second output file.
-After making these changes, the script will look like this: </p>
-<div class="codehilite"><pre><span></span><code>#!/bin/bash
-
-FILENAME=&quot;${1}&quot;
-TARGET_WORD=&quot;${2}&quot;
-VARIATIONS_OUTPUT=&quot;variations.${TARGET_WORD}.txt&quot;
-CONTEXTS_OUTPUT=&quot;contexts.${TARGET_WORD}.txt&quot;
-
-./word-variations.py ${FILENAME} ${TARGET_WORD} &gt; ${VARIATIONS_OUTPUT}
-./word-contexts.py ${FILENAME} ${VARIATIONS_OUTPUT} &gt; ${CONTEXTS_OUTPUT}
-</code></pre></div>
-
-<p>You may consider this optimization to be optimal and that's fine. But for longer scripts,
-being able to change "customizable" values in a single place helps prevent inconsistencies
-when making edits. Furthermore, this structure makes it easier to add additional arguments
-to the script. For example, if we wanted to always define custom names for the output files
-we could change the definitions at the top of script to read in the third and fourth arguments
-as the value, i.e.,</p>
-<div class="codehilite"><pre><span></span><code>#!/bin/bash
-
-FILENAME=&quot;${1}&quot;
-TARGET_WORD=&quot;${2}&quot;
-VARIATIONS_OUTPUT=&quot;${3}&quot;
-CONTEXTS_OUTPUT=&quot;${4}&quot;
-
-./word-variations.py ${FILENAME} ${TARGET_WORD} &gt; ${VARIATIONS_OUTPUT}
-./word-contexts.py ${FILENAME} ${VARIATIONS_OUTPUT} &gt; ${CONTEXTS_OUTPUT}
-</code></pre></div>
-
-</li>
+<li>Choose a base image.</li>
+<li>Copy the blast files we downloaded into the container.</li>
+<li>Unzip them (if needed) in a particular location.</li>
+<li>Provide information about blast's location to the command line.</li>
 </ol>
+<h3 id="choose-a-base-image">Choose a base image<a class="headerlink" href="#choose-a-base-image" title="Permanent link">&para;</a></h3>
+<p>We'll use a base image that has a lot of basic packages installed, to make 
+life easier later. The OSG team has created an <code>ubuntu</code> container with what we 
+need: </p>
+<div class="highlight"><pre><span></span><code>Bootstrap: docker
+From: hub.opensciencegrid.org/htc/ubuntu:24.04
+</code></pre></div>
+<h3 id="include-the-files">Include the files<a class="headerlink" href="#include-the-files" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Look at <a href="../part2-ex4-apptainer-definition/">Exercise 2.4</a>. Which section of 
+the definition file is needed to copy the downloaded <code>tar.gz</code> file into the container? </li>
+<li>One convention is to put manual software installs in the <code>/opt</code> directory. What 
+would that look like in the definition file? </li>
+<li>Try writing the section of the definition file that copies in the blast files. </li>
+</ol>
+<p>You should have something like the following to add to your definition file: </p>
+<div class="highlight"><pre><span></span><code>%files
+ ncbi-blast-2.17.0+-x64-linux.tar.gz /opt
+</code></pre></div>
+<h3 id="unzip-in-a-certain-location">Unzip in a certain location<a class="headerlink" href="#unzip-in-a-certain-location" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Look at <a href="../part2-ex4-apptainer-definition/">Exercise 2.4</a>. Which section of 
+the definition file should run the commands to unzip the <code>tar.gz</code> file? </li>
+<li>Where did we put the <code>tar.gz</code> file in the previous step? What command would 
+we need to run first, because we can unzip? </li>
+<li>Try writing the section of the definition file that unzips the blast files. </li>
+</ol>
+<p>You should have something like the following to add to your definition file: </p>
+<div class="highlight"><pre><span></span><code>%post
+ cd opt/
+ tar -xzf ncbi-blast-2.17.0+-x64-linux.tar.gz 
+</code></pre></div>
+<h3 id="provide-information-about-location">Provide information about location<a class="headerlink" href="#provide-information-about-location" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Finally - can you write out the folder path in the container that contains the actual blast 
+executable files? </li>
+<li>If you're not sure, look at the folder that you unzipped in the first part 
+of this exercise. </li>
+<li>What command would add the executable folder to the system <code>PATH</code> variable? </li>
+<li>Try writing the section of the definition file that set this variable: </li>
+</ol>
+<p>You should have something like the following to add to your definition file: </p>
+<div class="highlight"><pre><span></span><code>%environment
+ export PATH=/opt/ncbi-blast-2.17.0+/bin/:$PATH
+</code></pre></div>
+<h3 id="build-and-test">Build and test<a class="headerlink" href="#build-and-test" title="Permanent link">&para;</a></h3>
+<p>The entire definition file should look like this: </p>
+<div class="highlight"><pre><span></span><code>Bootstrap: docker
+From: hub.opensciencegrid.org/htc/ubuntu:24.04
+
+%files
+ ncbi-blast-2.17.0+-x64-linux.tar.gz /opt
+
+%post
+ cd opt/
+ tar -xzf ncbi-blast-2.17.0+-x64-linux.tar.gz 
+
+%environment
+ export PATH=/opt/ncbi-blast-2.17.0+/bin/:$PATH
+</code></pre></div>
+<p>Build and test as described in <a href="../part1-ex4-apptainer-build/#build-the-container">Exercise 1.4</a></p>
 <h2 id="apply-to-your-work">Apply to Your Work<a class="headerlink" href="#apply-to-your-work" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>Are you using a scripting language where you could add a header to your main script? 
-If so, what should it be? </p>
+<p>Is the software you want to use available as a standalone binary, like <code>blastp</code>?
+   How could you find out, and where could you get the necessary file?</p>
 </li>
 <li>
-<p>What items in your main code or commands are changing? Do you need to add arguments 
-to your code? </p>
-</li>
-<li>
-<p>How could you use variables in your script to make it easier to pass arguments 
-and make changes to your code?</p>
+<p>How could you adapt a definition file to include a binary executable file?</p>
 </li>
 </ol>
                 
@@ -1169,7 +1207,7 @@ and make changes to your code?</p>
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../part2-ex5-docker-build/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../part2-ex4-apptainer-definition/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1178,19 +1216,19 @@ and make changes to your code?</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              2.5 - Build Your Own Docker Container
+              2.4 - Apptainer Definition Files
             </div>
           </div>
         </a>
       
       
-        <a href="../../ospool/part1-ex1-where-run/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../part3-ex1-docker-build/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              1.1 - Where do jobs run?
+              3.1 - Build Your Own Docker Container
             </div>
           </div>
           <div class="md-footer__button md-icon">

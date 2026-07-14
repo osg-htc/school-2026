@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://osg-htc.org/school-2026/materials/software/part2-ex5-docker-build/">
+        <link rel="canonical" href="https://osg-htc.org/school-2026/materials/software/part4-ex1-build-executable/">
       
       <link rel="icon" href="../../../assets/OSG_Logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>2.5 - Build Your Own Docker Container - OSG School 2026</title>
+        <title>4.1 - Build an HTC-Friendly Executable - OSG School 2026</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#software-exercise-25-build-your-own-docker-container-optional" class="md-skip">
+        <a href="#software-exercise-21-build-an-htc-friendly-executable" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2.5 - Build Your Own Docker Container
+              4.1 - Build an HTC-Friendly Executable
             
           </span>
         </div>
@@ -706,6 +706,30 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../part2-ex5-manual-install/" class="md-nav__link">
+        2.5 - Example of Manual Installation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part3-ex1-docker-build/" class="md-nav__link">
+        3.1 - Build Your Own Docker Container
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -717,12 +741,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          2.5 - Build Your Own Docker Container
+          4.1 - Build an HTC-Friendly Executable
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        2.5 - Build Your Own Docker Container
+        4.1 - Build an HTC-Friendly Executable
       </a>
       
         
@@ -739,29 +763,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python-script" class="md-nav__link">
-    Python Script
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-set-up" class="md-nav__link">
-    Getting Set Up
+  <a href="#add-a-header" class="md-nav__link">
+    Add a Header
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-a-container" class="md-nav__link">
-    Building a Container
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#upload-container-and-submit-job" class="md-nav__link">
-    Upload Container and Submit Job
+  <a href="#incorporate-arguments" class="md-nav__link">
+    Incorporate Arguments
   </a>
   
 </li>
@@ -777,18 +794,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part3-ex1-build-executable/" class="md-nav__link">
-        3.1 - Build an HTC-Friendly Executable
-      </a>
     </li>
   
 
@@ -917,29 +922,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#python-script" class="md-nav__link">
-    Python Script
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-set-up" class="md-nav__link">
-    Getting Set Up
+  <a href="#add-a-header" class="md-nav__link">
+    Add a Header
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-a-container" class="md-nav__link">
-    Building a Container
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#upload-container-and-submit-job" class="md-nav__link">
-    Upload Container and Submit Job
+  <a href="#incorporate-arguments" class="md-nav__link">
+    Incorporate Arguments
   </a>
   
 </li>
@@ -964,143 +962,205 @@
               
                 
                 
-                <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: #008; } </style>
+                <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-<h1 id="software-exercise-25-build-your-own-docker-container-optional">Software Exercise 2.5: Build Your Own Docker Container (Optional)<a class="headerlink" href="#software-exercise-25-build-your-own-docker-container-optional" title="Permanent link">&para;</a></h1>
-<p><strong>Objective</strong>: Build a custom Docker container with <code>numpy</code> and use it in a job</p>
-<p><strong>Why learn this?</strong>: Docker containers can be run on both your laptop and OSPool. DockerHub
-also provides a convenient platform for sharing containers. If you want to use a custom 
-container, run across platforms, and/or share a container amongst a group, building in 
-Docker first is a good approach. </p>
-<h2 id="python-script">Python Script<a class="headerlink" href="#python-script" title="Permanent link">&para;</a></h2>
+<h1 id="software-exercise-21-build-an-htc-friendly-executable">Software Exercise 2.1 Build an HTC-Friendly Executable<a class="headerlink" href="#software-exercise-21-build-an-htc-friendly-executable" title="Permanent link">&para;</a></h1>
+<p><strong>Objective</strong>: Modify an existing script to include arguments and headers. </p>
+<p><strong>Why learn this?</strong>: A little bit of preparation can make it easier to reuse the 
+same script over and over to run many jobs. </p>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
 <ol>
-<li>For this example, create a script called <code>rand_array.py</code> on the Access Point. <div class="codehilite"><pre><span></span><code>import numpy as np
+<li>
+<p>Download the materials for this exercise using</p>
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>pelican object get osdf:///osg-public/school/2026/contexts.tar.gz ./
+<span class="gp">$ </span>tar -xzf contexts.tar.gz
+</code></pre></div>
 
-#numpy array with random values
-a = np.random.rand(4,2,3)
+</li>
+<li>
+<p>There are two scripts included in the materials: <code>word-variations.py</code> and <code>word-contexts.py</code>.
+The first one will identify "trivial" variations (capitalization, punctuation) on the provided word.
+For example:</p>
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>./word-variations.py Alice_in_Wonderland.txt Dodo
+</code></pre></div>
 
-print(a)
+<p>The second one expands the detection of the provided word to report an additional word before
+and after the provided word, for example:</p>
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>./word-contexts.py Alice_in_Wonderland.txt Dodo
+</code></pre></div>
+
+</li>
+<li>
+<p>We want to use these two scripts to find all the contexts where a word was used, regardless of
+the "trivial" variations. To do so, we first save the results of the <code>word-variations.py</code> command
+to a file, then use the contents of that file with the <code>word-contexts.py</code> command (also saving the
+output to file):</p>
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>./word-variations.py Alice_in_Wonderland.txt Dodo &gt; variations.Dodo.txt
+<span class="gp">$ </span>./word-contexts.py Alice_in_Wonderland.txt variations.Dodo.txt &gt; contexts.Dodo.txt
 </code></pre></div>
 
 </li>
 </ol>
-<p>To run this script, we will need a copy of Python with the <code>numpy</code> library. 
-This exercise will walk you through the steps to build your own Docker container 
-based on Python, with the <code>numpy</code> Python library added on. </p>
-<h2 id="getting-set-up">Getting Set Up<a class="headerlink" href="#getting-set-up" title="Permanent link">&para;</a></h2>
-<p>Before building your own Docker container, you need to go through the following 
-set up steps: </p>
+<h2 id="add-a-header">Add a Header<a class="headerlink" href="#add-a-header" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>Install Docker Dekstop on your computer. </p>
-<ul>
-<li><a href="https://www.docker.com/products/docker-desktop">Docker Desktop page</a></li>
-</ul>
-</li>
-<li>
-<p>You may need to create a Docker Hub user name to download Docker Desktop; if not 
-created at that step, create a user name for <a href="https://hub.docker.com/">Docker Hub</a> now.</p>
-</li>
-<li>
-<p>(Optional): Once Docker is up and running on your computer, you are welcome to take 
-some time to explore the basics of downloading and running a container, as shown in 
-the initial sections of this Docker lesson:</p>
-<ul>
-<li><a href="https://carpentries-incubator.github.io/docker-introduction/">Introduction to Docker</a>
-However, this isn't strictly necessary for building your own container. </li>
-</ul>
-</li>
-</ol>
-<h2 id="building-a-container">Building a Container<a class="headerlink" href="#building-a-container" title="Permanent link">&para;</a></h2>
-<p>In order to make our container reproducible, we will be using Docker's capability 
-to build a container image from a specification file.  </p>
-<ol>
-<li>
-<p>First, create an empty build directory on <strong>your computer</strong>, not the Access Points. </p>
-</li>
-<li>
-<p>In the build directory, create a file called <code>Dockerfile</code> (no file extension!) with 
-the following contents: </p>
-<div class="codehilite"><pre><span></span><code># Start with this image as a &quot;base&quot;.
-# It&#39;s as if all the commands that created that image were inserted here.
-# Always use a specific tag like &quot;4.10.3&quot;, never &quot;latest&quot;!
-# The version referenced by &quot;latest&quot; can change, so the build will be 
-# more stable when building from a specific version tag. 
-FROM continuumio/miniconda3:4.10.3
+<p>To create a basic script, you can put the above commands into a file 
+called <code>get_contexts.sh</code>. To make it clear what language we expect to use to 
+run the script, we will add the following header on the first line: <code>`#!/bin/bash</code></p>
+<div class="codehilite"><pre><span></span><code>#!/bin/bash
 
-# Use RUN to execute commands inside the image as it is being built up.
-RUN conda install --yes numpy
-
-# RUN multiple commands together.
-# Try to always &quot;clean up&quot; after yourself to reduce the final size of your image.
-RUN apt-get update \
-&amp;&amp; apt-get --yes install --no-install-recommends graphviz \
-&amp;&amp; apt-get --yes clean \
-&amp;&amp; rm -rf /var/lib/apt/lists/*
+./word-variations.py Alice_in_Wonderland.txt Dodo &gt; variations.Dodo.txt
+./word-contexts.py Alice_in_Wonderland.txt variations.Dodo.txt &gt; contexts.Dodo.txt
 </code></pre></div>
 
-<p>This is our specification file and provides Docker with the information it needs 
-to build our new container. There are other options besides <code>FROM</code> and <code>RUN</code>; see 
-the <a href="https://docs.docker.com/engine/reference/builder/">Docker documentation</a> for more information. </p>
-</li>
-<li>
-<p>Note that our container is starting from an existing container 
-<code>continuumio/miniconda3:4.10.3</code>. This container is produced by the <code>continuumio</code> 
-organization; the number <code>4.10.3</code> indicates the container version. When we create our 
-new container, we will want to use a similar naming scheme of: </p>
-<div class="codehilite"><pre><span></span><code>USERNAME/CONTAINER:VERSIONTAG
-</code></pre></div>
-
-<p>In what follows, you will want to replace <code>USERNAME</code> with your DockerHub user name. 
-The <code>CONTAINER</code> name and <code>VERSIONTAG</code> are your choice; in what follows, we will 
-use <code>py3-numpy</code> as the container name and <code>2024-08</code> as the version tag. </p>
-</li>
-<li>
-<p>To build and name the new container, open a command line window on your computer 
-where you can run Docker commands. Use the <code>cd</code> command to change your working directory 
-to the build directory with the <code>Dockerfile</code> inside. </p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>docker build -t USERNAME/py3-numpy:2024-08 .
-</code></pre></div>
-
-<p>Note the <code>.</code> at the end of the command! This indicates that we're using the current 
-directory as our build environment, including the <code>Dockerfile</code> inside. </p>
-</li>
-</ol>
-<h2 id="upload-container-and-submit-job">Upload Container and Submit Job<a class="headerlink" href="#upload-container-and-submit-job" title="Permanent link">&para;</a></h2>
-<p>Right now the container image only exists on your computer. To use it in CHTC or 
-elsewhere, it needs to be added to a <strong>public</strong> registry like Docker Hub. </p>
-<div class="admonition danger">
-<p class="admonition-title"><strong>Anyone</strong> can access a public Docker container!</p>
-<p>Make sure that you do include any secret or privileged information in your container.</p>
+<p>The "header" of <code>#!/bin/bash</code> will tell the computer that this is a bash shell script 
+and can be run in the same way that  you would run individual commands on the command line. 
+We use <code>/bin/bash</code> instead of just <code>bash</code> because that is the full path to the <code>bash</code> 
+software file.</p>
+<div class="admonition note">
+<p class="admonition-title">Other languages</p>
+<p>We can use the same principle for any scripting language. For example, the header for a Python script 
+could be either <code>#!/usr/bin/python3</code> or <code>#!/usr/bin/env python3</code>. Similar logic works 
+for perl, R, julia and other scripting languages. </p>
 </div>
-<ol>
-<li>
-<p>To put your container image in Docker Hub, use the <code>docker push</code> command on the 
-command line:</p>
-<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>docker push USERNAME/py3-numpy:2024-08
-</code></pre></div>
-
-<p>If the push doesn't work, you may need to run <code>docker login</code> first, enter your 
-Docker Hub username and password and then try the push again. </p>
 </li>
 <li>
-<p>Once your container image is in DockerHub, you can use it in jobs as described 
-in <a href="../part1-ex3-docker-jobs/">Exercise 1.3</a>. </p>
+<p>Can you now run the script? </p>
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>./get_contexts.sh
+</code></pre></div>
+
+</li>
+<li>
+<p>This gives "permission denied." Let's add executable permissions to the script 
+and try again: </p>
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>chmod +x get_contexts.sh
+<span class="gp">$ </span>./get_contexts.sh
+</code></pre></div>
+
+</li>
+</ol>
+<h2 id="incorporate-arguments">Incorporate Arguments<a class="headerlink" href="#incorporate-arguments" title="Permanent link">&para;</a></h2>
+<p>Let's say that you want to find the contexts for every occurrence of a character's name.
+Can you imagine trying to run this script for each name? It would be tedious
+to edit it for each one, especially since the name is used in multiple places in the script. 
+And if you want to use this script to analyze other texts, you'd also have to change the filename.</p>
+<p>Instead of manually editing the <code>get_contexts.sh</code> for each time we want to run a different analysis,
+we should add arguments to the script to make it easy to reuse. 
+Any information in a script or executable that is going to change or vary across 
+jobs or analyses should likely be turned into an argument that is specified on the command line. </p>
+<ol>
+<li>
+<p>In our example above, which pieces of the script are likely to change or vary? </p>
+</li>
+<li>
+<p>The name of the input file (<code>Alice_in_Wonderland.txt</code>) and the name to detect (<code>Dodo</code>) should 
+be turned into arguments. Can you envision what our script should look like if we ran it 
+with input arguments? </p>
+</li>
+<li>
+<p>Let's say we want to be able to run the following command: </p>
+<div class="codehilite"><pre><span></span><code><span class="gp">$ </span>./get_contexts.sh Alice_in_Wonderland.txt Dodo
+</code></pre></div>
+
+<p>In order to get arguments from the command line into the script, you have 
+to use special variables in the script. In bash, these are <code>$1</code> (for the first 
+argument), <code>$2</code> (for the second argument) and so on. Try to figure out where 
+these should go in our <code>get_contexts.sh</code> script. </p>
+<div class="admonition note">
+<p class="admonition-title">Other Languages</p>
+<p>Each language is going to have its own syntax for reading command line 
+arguments into the script. In Python, <code>sys.argv</code> is a basic method, and more 
+advanced libraries like <code>argparse</code> can be used. In R, the <code>commandArgs()</code> function 
+can do this. Google "command line arguments in ______" to find the right 
+syntax for your language of choice!</p>
+</div>
+</li>
+<li>
+<p>A first pass at adding arguments might look like this: </p>
+<div class="codehilite"><pre><span></span><code>#!/bin/bash
+
+./word-variations.py $1 $2 &gt; variations.$2.txt
+./word-contexts.py $1 variations.$2.txt &gt; contexts.$2.txt
+</code></pre></div>
+
+<p>Try running it as described above. Does it work? </p>
+</li>
+<li>
+<p>While we now have arguments, we have lost some of the readability of our script. The 
+numbers <code>$1</code> and <code>$2</code> are not very meaningful in themselves! Let's rewrite the script to 
+assign the arguments to meaningful variable names: </p>
+<div class="codehilite"><pre><span></span><code>#!/bin/bash
+
+FILENAME=&quot;${1}&quot;
+TARGET_WORD=&quot;${2}&quot;
+
+./word-variations.py ${FILENAME} ${TARGET_WORD} &gt; variations.${TARGET_WORD}.txt
+./word-contexts.py ${FILENAME} variations.${TARGET_WORD}.txt &gt; contexts.${TARGET_WORD}.txt
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Why curly brackets?</p>
+<p>You'll notice above that we started using curly brackets around our variables. 
+While you technically don't need them (<code>$TARGET_WORD</code> would also be fine), using 
+them makes the name of the variable (compared to other text) completely clear. 
+This is especially useful when combining variables with underscores, and in the
+case of specifying the numerical arguments (<code>$1</code>, <code>$2</code>, etc.) the curly braces
+allow you to go above a value of <code>9</code> without error.</p>
+</div>
+</li>
+<li>
+<p>There is one final place where we could optimize this script. The output filename
+<code>variations.${TARGET_WORD}.txt</code> is used in multiple places in the script. If we decide we
+want to change the naming convention of the output file, we'd have to remember to edit 
+all the locations where that name is used, which is asking for typos. Instead, we 
+should use a variable for referring to the output filename, so that we only ever need to change
+one spot in the file. We can do a similar thing for the second output file.
+After making these changes, the script will look like this: </p>
+<div class="codehilite"><pre><span></span><code>#!/bin/bash
+
+FILENAME=&quot;${1}&quot;
+TARGET_WORD=&quot;${2}&quot;
+VARIATIONS_OUTPUT=&quot;variations.${TARGET_WORD}.txt&quot;
+CONTEXTS_OUTPUT=&quot;contexts.${TARGET_WORD}.txt&quot;
+
+./word-variations.py ${FILENAME} ${TARGET_WORD} &gt; ${VARIATIONS_OUTPUT}
+./word-contexts.py ${FILENAME} ${VARIATIONS_OUTPUT} &gt; ${CONTEXTS_OUTPUT}
+</code></pre></div>
+
+<p>You may consider this optimization to be optimal and that's fine. But for longer scripts,
+being able to change "customizable" values in a single place helps prevent inconsistencies
+when making edits. Furthermore, this structure makes it easier to add additional arguments
+to the script. For example, if we wanted to always define custom names for the output files
+we could change the definitions at the top of script to read in the third and fourth arguments
+as the value, i.e.,</p>
+<div class="codehilite"><pre><span></span><code>#!/bin/bash
+
+FILENAME=&quot;${1}&quot;
+TARGET_WORD=&quot;${2}&quot;
+VARIATIONS_OUTPUT=&quot;${3}&quot;
+CONTEXTS_OUTPUT=&quot;${4}&quot;
+
+./word-variations.py ${FILENAME} ${TARGET_WORD} &gt; ${VARIATIONS_OUTPUT}
+./word-contexts.py ${FILENAME} ${VARIATIONS_OUTPUT} &gt; ${CONTEXTS_OUTPUT}
+</code></pre></div>
+
 </li>
 </ol>
 <h2 id="apply-to-your-work">Apply to Your Work<a class="headerlink" href="#apply-to-your-work" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>What is a good container to use as the base (specified in the <code>FROM</code> line) for your container?</p>
+<p>Are you using a scripting language where you could add a header to your main script? 
+If so, what should it be? </p>
 </li>
 <li>
-<p>Does your software need certain Linux libraries in order to work?</p>
+<p>What items in your main code or commands are changing? Do you need to add arguments 
+to your code? </p>
+</li>
+<li>
+<p>How could you use variables in your script to make it easier to pass arguments 
+and make changes to your code?</p>
 </li>
 </ol>
-<blockquote>
-<p>Thanks to <a href="https://github.com/JoshKarpel/osg-school-example-dockerfile">Josh Karpel</a> for 
-providing the original sample <code>Dockerfile</code>!</p>
-</blockquote>
                 
                   
                 
@@ -1121,7 +1181,7 @@ providing the original sample <code>Dockerfile</code>!</p>
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../part2-ex4-apptainer-definition/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../part3-ex1-docker-build/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1130,19 +1190,19 @@ providing the original sample <code>Dockerfile</code>!</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              2.4 - Apptainer Definition Files
+              3.1 - Build Your Own Docker Container
             </div>
           </div>
         </a>
       
       
-        <a href="../part3-ex1-build-executable/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../ospool/part1-ex1-where-run/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              3.1 - Build an HTC-Friendly Executable
+              1.1 - Where do jobs run?
             </div>
           </div>
           <div class="md-footer__button md-icon">
