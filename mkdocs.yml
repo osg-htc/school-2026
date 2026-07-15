@@ -44,6 +44,7 @@ nav:
   - Home:                           index.md
   - Schedule:                       schedule.md
   - Health Guidelines:              health.md
+  - Long-Term OSPool Access:        projects.md
   - Logistics:
     - General information:          logistics/index.md
     - Visa requirements:            logistics/visas.md
