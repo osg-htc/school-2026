@@ -71,7 +71,7 @@
 ## Data
 
 !!! abstract "Data Slides"
-	View the Slides: [pdf](data/files/osgus25-data.pdf)
+	View the Slides: [pptx](data/files/osgus26-data.pptx)
 
 !!! note "Data Exercises"
 	- [Exercise 1.1: Understanding a job's data needs](data/part1-ex1-data-needs.md)
