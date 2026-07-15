@@ -55,7 +55,6 @@
 	- [Exercise 3.1 - Build Your Own Docker Container](software/part3-ex1-docker-build.md)
 	- [Exercise 4.1 - Build an HTC-Friendly Executable](software/part4-ex1-build-executable.md)
 
-<!--
 ## The Open Science Pool (OSPool)
 
 !!! abstract "OSPool Slides"
@@ -79,6 +78,8 @@
 	- [Exercise 1.3: Splitting input](data/part1-ex3-blast-split.md)
 	- [Exercise 2.1: OSDF for inputs](data/part2-ex1-osdf-inputs.md)
 	- [Exercise 2.2: OSDF for outputs](data/part2-ex2-osdf-outputs.md)
+
+<!--
 
 ## Troubleshooting
 
