@@ -35,15 +35,9 @@ All School participants and staff are encourage to attend!
     </tr>
     <tr>
       <td>9:15</td>
-      <td>9:30</td>
+      <td>9:45</td>
       <td><span class="before-dot text-light-blue">Lecture: Introduction to High Throughput Computing</span></td>
       <td>Christina</td>
-    </tr>
-    <tr>
-      <td>9:30</td>
-      <td>9:45</td>
-      <td><span class="before-dot text-pink">Exercise: Scaling Out Computing Worksheet</span></td>
-      <td>-</td>
     </tr>
     <tr>
       <td>9:45</td>
@@ -98,9 +92,14 @@ All School participants and staff are encourage to attend!
     </tr> 
     <tr>
       <td>15:15</td>
+      <td>15:30</td>
+      <td><span class="before-dot text-pink">Exercise: Scaling Out Computing Worksheet</span></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>15:30</td>
       <td>16:45</td>
       <td>
-        <span class="before-dot text-pink">Exercises: Goals and unfinished exercises</span><br>
         <span class="before-dot text-orange">Individual consultations</span>
       </td>
       <td>staff</td>
@@ -113,15 +112,15 @@ All School participants and staff are encourage to attend!
       </td>
       <td>-</td>
     </tr>
-    <!-- <tr>
-      <td>19:00</td>
-      <td>20:30</td>
+    <tr>
+      <td>18:30</td>
+      <td>20:00</td>
       <td>
-        <span class="before-dot text-orange">Evening work session (optional)</span><br>
+        <span class="before-dot text-light-orange">Evening work session (optional)</span><br>
         Memorial Union – Board Room (3rd Floor East)
       </td>
-      <td>Andrew, Tim C.</td>
-    </tr>-->
+      <td>Christina, Tim C.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -179,7 +178,7 @@ All School participants and staff are encourage to attend!
       <td>13:30</td>
       <td>
         Lunch<br>
-        Software groups<br>
+        Software groups and instructor breakout<br>
         <strong>Also:</strong> Return travel documents (~13:20)
       </td>
       <td>-</td>
@@ -218,6 +217,15 @@ All School participants and staff are encourage to attend!
         <span class="before-dot text-green">End of day wrap up</span><br>
       </td>
       <td>-</td>
+    </tr>
+    <tr>
+      <td>18:30</td>
+      <td>20:00</td>
+      <td>
+        <span class="before-dot text-light-orange">Evening work session (optional)</span><br>
+        Memorial Union – Board Room (3rd Floor East)
+      </td>
+      <td>Amber, Andrew</td>
     </tr>
   </tbody>
 </table>
@@ -266,11 +274,11 @@ All School participants and staff are encourage to attend!
       <td>
         HTC Showcase Part 1
         <br>
-        &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;
-        <br>
-        <!--<div style="margin-left: 2ex;"><a href="../materials/showcase/OSG_School_SSE_2025-06-25.pptx">“Scaling Virtual Screening to Ultra-Large Virtual Chemical Libraries”</a></div>-->
-        &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;
-        <br>
+        &#9654; <span style="color: rgb(173, 81, 12);">Ian Ross</span>;
+        Center for High Throughput Computing<br>
+        <div style="margin-left: 2ex;"><a href="">Best Practices for Programming with AI</a></div>
+        &#9654; <span style="color: rgb(173, 81, 12);">Spencer Ericksen</span>;
+        Small Molecule Screening Facility<br>
         <!--<div style="margin-left: 2ex;"><a href="../materials/showcase/martinez_osgschool.pdf">“Dark Matter, Radio Astronomy, and High Throughput Computing”</a></div>-->
       </td>
       <td>-</td>
@@ -400,6 +408,15 @@ All School participants and staff are encourage to attend!
       </td>
       <td>-</td>
     </tr>
+    <tr>
+      <td>18:30</td>
+      <td>20:00</td>
+      <td>
+        <span class="before-dot text-light-orange">Evening work session (optional)</span><br>
+        Memorial Union – Park View (4th Floor)
+      </td>
+      <td>TBD, Tim C.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -474,9 +491,11 @@ All School participants and staff are encourage to attend!
       <td>
         HTC Showcase, Part 2
         <br>
-        &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;<br>
+        &#9654; <span style="color: rgb(173, 81, 12);">Jordan Loeffler</span>;
+        Chemical and Biological Engineering<br>
         <!--<div style="margin-left: 2ex;">“Title of talk”</div>-->
-        &#9654; <span style="color: rgb(173, 81, 12);">TBD</span>;<br>
+        &#9654; <span style="color: rgb(173, 81, 12);">Annika Pratt</span>;
+        Plant Pathology<br>
         <!--<div style="margin-left: 2ex;">“Title of talk”</div>-->
       </td>
       <td>-</td>
@@ -505,8 +524,8 @@ All School participants and staff are encourage to attend!
     <tr>
       <td>15:30</td>
       <td>16:30</td>
-      <td>HTC and HTCondor Philosophy</td>
-      <td>TBD</td>
+      <td><span class="before-dot text-light-blue">HTC Philosophy</td>
+      <td>Brian Bockelman</td>
     </tr>
     <tr>
       <td>16:30</td>

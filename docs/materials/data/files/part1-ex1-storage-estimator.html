@@ -1,0 +1,827 @@
+<div class="storage-activity" id="storage-activity">
+  <div class="sa-tabs" role="tablist" aria-label="Storage exercises">
+    <button type="button" class="sa-tab active" data-target="ex1" role="tab" aria-selected="true">
+      Exercise 1 &mdash; One job
+    </button>
+    <button type="button" class="sa-tab" data-target="ex2" role="tab" aria-selected="false">
+      Exercise 2 &mdash; Three jobs
+    </button>
+  </div>
+
+  <!-- ============================ EXERCISE 1 ============================ -->
+  <section class="sa-panel active" data-panel="ex1" role="tabpanel">
+    <p class="activity-intro">
+      The submit file below runs a single <code>blastx</code> job. Every file it
+      uses is shown as a card. Drag each card into the box where that file takes up
+      disk space &mdash; on the <strong>Access Point (AP)</strong>, the
+      <strong>Execution Point (EP)</strong>, or <strong>both</strong> &mdash; then
+      work out the total storage each side needs. Some files live in both places;
+      only the untarred data is EP&#8209;only. (Prefer clicking? Use the small
+      <em>AP</em> / <em>EP</em> buttons on each card.)
+    </p>
+
+    <pre class="submit-file"><code>executable            = blast_wrapper.sh
+arguments             = mouse.fa results
+
+transfer_input_files  = pdbaa.tar.gz, blast.tar.gz, mouse.fa
+transfer_output_files = results
+
+output                = job.out
+error                 = job.err
+log                   = job.log
+
+request_cpus          = 1
+request_memory        = 2 GB
+request_disk          = 2 GB
+
+queue 1</code></pre>
+
+    <div class="palette-wrap">
+      <div class="palette-label">Files used by this job:</div>
+      <div class="file-palette sa-palette" aria-label="Files used by this job"></div>
+    </div>
+
+    <div class="dropzones">
+      <div class="dropzone sa-zone" data-zone="ap">
+        <h4>Storage Needs on the Access Point (AP)</h4>
+        <div class="zone-items sa-zone-items"></div>
+      </div>
+      <div class="dropzone sa-zone" data-zone="ep">
+        <h4>Storage Needs on the Execution Point (EP)</h4>
+        <div class="zone-items sa-zone-items"></div>
+      </div>
+    </div>
+
+    <div class="activity-actions">
+      <button type="button" class="sa-check-placement">Check placement</button>
+      <button type="button" class="sa-show-answer">Show answer</button>
+      <button type="button" class="sa-reset">Reset</button>
+    </div>
+    <div class="feedback sa-placement-feedback" aria-live="polite"></div>
+
+    <div class="totals">
+      <p class="totals-label">Now total the storage each side needs:</p>
+      <label class="total-row">
+        <span class="total-name">Total storage on the AP:</span>
+        <input type="number" class="sa-ap-total" min="0" step="0.1" placeholder="Enter size">
+        <span>MB</span>
+      </label>
+      <label class="total-row">
+        <span class="total-name">Total storage on the EP:</span>
+        <input type="number" class="sa-ep-total" min="0" step="0.1" placeholder="Enter size">
+        <span>MB</span>
+      </label>
+      <button type="button" class="sa-check-totals">Check totals</button>
+      <div class="feedback sa-totals-feedback" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============================ EXERCISE 2 ============================ -->
+  <section class="sa-panel" data-panel="ex2" role="tabpanel" hidden>
+    <p class="activity-intro">
+      Now imagine submitting the <em>same</em> workflow as <strong>three jobs at
+      once</strong> &mdash; one per query file (<code>mouse.fa</code>,
+      <code>horse.fa</code>, <code>dog.fa</code>) &mdash; using the submit file below.
+      Each job runs on its <strong>own</strong> execution point. Sort the files for the
+      whole batch: the <strong>AP</strong> box is the access point you submit from, and
+      the <strong>EP</strong> box is the single node running the <code>mouse.fa</code>
+      job. Then total each side and compare with Exercise&nbsp;1.
+    </p>
+
+    <pre class="submit-file"><code>executable            = blast_wrapper.sh
+arguments             = $(query) $(query).result
+
+transfer_input_files  = pdbaa.tar.gz, blast.tar.gz, $(query)
+transfer_output_files = $(query).result
+
+log                   = blast.log
+
+request_cpus          = 1
+request_memory        = 2 GB
+request_disk          = 2 GB
+
+queue query in (mouse.fa horse.fa dog.fa)</code></pre>
+
+    <div class="palette-wrap">
+      <div class="palette-label">Files across all three jobs:</div>
+      <div class="file-palette sa-palette" aria-label="Files across all three jobs"></div>
+    </div>
+
+    <div class="dropzones">
+      <div class="dropzone sa-zone" data-zone="ap">
+        <h4>Storage on the Access Point (all 3 jobs)</h4>
+        <div class="zone-items sa-zone-items"></div>
+      </div>
+      <div class="dropzone sa-zone" data-zone="ep">
+        <h4>Storage on one Execution Point (the <code>mouse.fa</code> job)</h4>
+        <div class="zone-items sa-zone-items"></div>
+      </div>
+    </div>
+
+    <div class="activity-actions">
+      <button type="button" class="sa-check-placement">Check placement</button>
+      <button type="button" class="sa-show-answer">Show answer</button>
+      <button type="button" class="sa-reset">Reset</button>
+    </div>
+    <div class="feedback sa-placement-feedback" aria-live="polite"></div>
+
+    <div class="totals">
+      <p class="totals-label">Now total the storage each side needs:</p>
+      <label class="total-row">
+        <span class="total-name">Total storage on the AP (all 3 jobs):</span>
+        <input type="number" class="sa-ap-total" min="0" step="0.1" placeholder="Enter size">
+        <span>MB</span>
+      </label>
+      <label class="total-row">
+        <span class="total-name">Total storage on one EP (one job):</span>
+        <input type="number" class="sa-ep-total" min="0" step="0.1" placeholder="Enter size">
+        <span>MB</span>
+      </label>
+      <button type="button" class="sa-check-totals">Check totals</button>
+      <div class="feedback sa-totals-feedback" aria-live="polite"></div>
+    </div>
+  </section>
+</div>
+
+
+<style>
+.storage-activity {
+  border: 1px solid var(--md-default-fg-color--lightest, #ddd);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.storage-activity > :first-child {
+  margin-top: 0;
+}
+
+/* ---- Tabs ---- */
+.sa-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest, #ddd);
+  margin-bottom: 1.25rem;
+}
+
+.sa-tab {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+}
+
+.sa-tab.active {
+  color: var(--md-primary-fg-color, #4051b5);
+  border-bottom-color: var(--md-primary-fg-color, #4051b5);
+}
+
+.sa-panel {
+  display: none;
+}
+
+.sa-panel.active {
+  display: block;
+}
+
+.sa-panel > :first-child {
+  margin-top: 0;
+}
+
+/* ---- Submit file ---- */
+.submit-file {
+  background: var(--md-code-bg-color, #f5f5f5);
+  border-left: 4px solid var(--md-primary-fg-color, #4051b5);
+  border-radius: 4px;
+  padding: 0.9rem 1rem;
+  margin: 1rem 0 1.5rem;
+  overflow-x: auto;
+}
+
+.submit-file code {
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  white-space: pre;
+  background: none;
+  padding: 0;
+}
+
+.palette-label,
+.totals-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Palette + cards ---- */
+.file-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lightest, #ddd);
+  border-radius: 6px;
+  background: var(--md-code-bg-color, #f5f5f5);
+}
+
+.file-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--md-default-fg-color--light, #999);
+  border-radius: 6px;
+  background: var(--md-default-bg-color, #fff);
+  cursor: grab;
+  min-width: 8.5rem;
+}
+
+.file-card:active {
+  cursor: grabbing;
+}
+
+.file-card.placed {
+  border-color: var(--md-primary-fg-color, #4051b5);
+}
+
+.file-card.correct {
+  border-color: #2e7d32;
+  box-shadow: inset 0 0 0 1px #2e7d32;
+}
+
+.file-card.incorrect {
+  border-color: #d32f2f;
+  box-shadow: inset 0 0 0 1px #d32f2f;
+}
+
+.file-card .file-name {
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.8rem;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.file-card .file-size {
+  font-size: 0.7rem;
+  opacity: 0.75;
+}
+
+.card-toggles {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 0.1rem;
+}
+
+.card-toggle {
+  flex: 1;
+  padding: 0.15rem 0.3rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border: 1px solid var(--md-default-fg-color--light, #999);
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.card-toggle.active {
+  background: var(--md-primary-fg-color, #4051b5);
+  border-color: var(--md-primary-fg-color, #4051b5);
+  color: #fff;
+}
+
+/* ---- Drop zones ---- */
+.dropzones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.dropzone {
+  flex: 1 1 16rem;
+  min-width: 0;
+  padding: 0.9rem;
+  border: 2px dashed var(--md-default-fg-color--light, #999);
+  border-radius: 8px;
+  background: var(--md-code-bg-color, #f5f5f5);
+}
+
+.dropzone.dragover {
+  border-color: var(--md-primary-fg-color, #4051b5);
+  border-style: solid;
+  background: rgba(64, 81, 181, 0.08);
+}
+
+.dropzone h4 {
+  margin: 0 0 0.75rem;
+}
+
+.zone-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-height: 3rem;
+  align-content: flex-start;
+}
+
+.zone-items:empty::before {
+  content: "Drop files here";
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.zone-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background: var(--md-default-bg-color, #fff);
+  border: 1px solid var(--md-primary-fg-color, #4051b5);
+  font-size: 0.75rem;
+}
+
+.zone-chip .chip-name {
+  font-family: var(--md-code-font-family, monospace);
+  font-weight: 600;
+}
+
+.zone-chip .chip-remove {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.zone-chip .chip-remove:hover {
+  opacity: 1;
+}
+
+/* ---- Actions + totals ---- */
+.activity-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.storage-activity button:not(.card-toggle):not(.chip-remove):not(.sa-tab) {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  background: var(--md-primary-fg-color, #4051b5);
+  color: #fff;
+}
+
+.sa-reset,
+.sa-show-answer {
+  background: transparent !important;
+  color: inherit !important;
+  border: 1px solid var(--md-default-fg-color--light, #999) !important;
+}
+
+.totals {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest, #ddd);
+}
+
+.total-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.total-name {
+  font-weight: 600;
+  min-width: 16rem;
+}
+
+.total-row input {
+  width: 9rem;
+  padding: 0.45rem;
+  border: 1px solid var(--md-default-fg-color--light, #999);
+  border-radius: 4px;
+  font-size: 1rem;
+  background: var(--md-default-bg-color, #fff);
+  color: inherit;
+}
+
+.sa-check-totals {
+  margin-top: 0.5rem;
+}
+
+.feedback {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  display: none;
+}
+
+.feedback.correct {
+  display: block;
+  background: rgba(46, 125, 50, 0.12);
+  border-left: 4px solid #2e7d32;
+}
+
+.feedback.close {
+  display: block;
+  background: rgba(237, 108, 2, 0.12);
+  border-left: 4px solid #ed6c02;
+}
+
+.feedback.incorrect {
+  display: block;
+  background: rgba(211, 47, 47, 0.12);
+  border-left: 4px solid #d32f2f;
+}
+</style>
+
+
+<script>
+(function () {
+  const ZONES = ["ap", "ep"];
+
+  function sumFor(files, zone) {
+    return files.reduce(function (sum, f) {
+      return f.correct.indexOf(zone) !== -1 ? sum + f.size : sum;
+    }, 0);
+  }
+
+  function sameSet(a, b) {
+    if (a.length !== b.length) { return false; }
+    return a.every(function (z) { return b.indexOf(z) !== -1; });
+  }
+
+  function show(el, cls, html) {
+    el.className = "feedback " + cls;
+    el.innerHTML = html;
+  }
+
+  function hide(el) {
+    el.className = "feedback";
+    el.innerHTML = "";
+  }
+
+  // Wire up one exercise instance inside `root`.
+  function buildActivity(root, files, opts) {
+    const fileById = {};
+    files.forEach(function (f) { fileById[f.id] = f; });
+
+    const AP_TOTAL = sumFor(files, "ap");
+    const EP_TOTAL = sumFor(files, "ep");
+
+    const placement = { ap: new Set(), ep: new Set() };
+    const palette = root.querySelector(".sa-palette");
+    const zoneEls = {};
+    const zoneItemEls = {};
+    root.querySelectorAll(".sa-zone").forEach(function (z) {
+      zoneEls[z.dataset.zone] = z;
+      zoneItemEls[z.dataset.zone] = z.querySelector(".sa-zone-items");
+    });
+    const placementFeedback = root.querySelector(".sa-placement-feedback");
+    const totalsFeedback = root.querySelector(".sa-totals-feedback");
+    const apInput = root.querySelector(".sa-ap-total");
+    const epInput = root.querySelector(".sa-ep-total");
+    const cardEls = {};
+
+    // ---- Palette ----
+    files.forEach(function (f) {
+      const card = document.createElement("div");
+      card.className = "file-card";
+      card.setAttribute("draggable", "true");
+      card.dataset.id = f.id;
+
+      const name = document.createElement("span");
+      name.className = "file-name";
+      name.textContent = f.name;
+
+      const size = document.createElement("span");
+      size.className = "file-size";
+      size.textContent = f.label;
+
+      const toggles = document.createElement("div");
+      toggles.className = "card-toggles";
+      ZONES.forEach(function (zone) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "card-toggle";
+        btn.dataset.zone = zone;
+        btn.textContent = zone.toUpperCase();
+        btn.setAttribute("draggable", "false");
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          setMembership(f.id, zone, !placement[zone].has(f.id));
+        });
+        toggles.appendChild(btn);
+      });
+
+      card.appendChild(name);
+      card.appendChild(size);
+      card.appendChild(toggles);
+
+      card.addEventListener("dragstart", function (e) {
+        e.dataTransfer.setData("text/plain", f.id);
+        e.dataTransfer.effectAllowed = "copy";
+      });
+
+      palette.appendChild(card);
+      cardEls[f.id] = card;
+    });
+
+    // ---- Zones ----
+    ZONES.forEach(function (zone) {
+      const el = zoneEls[zone];
+      el.addEventListener("dragover", function (e) {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "copy";
+        el.classList.add("dragover");
+      });
+      el.addEventListener("dragleave", function () {
+        el.classList.remove("dragover");
+      });
+      el.addEventListener("drop", function (e) {
+        e.preventDefault();
+        el.classList.remove("dragover");
+        const id = e.dataTransfer.getData("text/plain");
+        if (fileById[id]) { setMembership(id, zone, true); }
+      });
+    });
+
+    function setMembership(id, zone, on) {
+      if (on) { placement[zone].add(id); }
+      else { placement[zone].delete(id); }
+      clearMarks();
+      renderZone(zone);
+      updateCard(id);
+    }
+
+    function updateCard(id) {
+      const card = cardEls[id];
+      const inAny = placement.ap.has(id) || placement.ep.has(id);
+      card.classList.toggle("placed", inAny);
+      card.querySelectorAll(".card-toggle").forEach(function (btn) {
+        btn.classList.toggle("active", placement[btn.dataset.zone].has(id));
+      });
+    }
+
+    function renderZone(zone) {
+      const container = zoneItemEls[zone];
+      container.textContent = "";
+      files.forEach(function (f) {
+        if (!placement[zone].has(f.id)) { return; }
+
+        const chip = document.createElement("span");
+        chip.className = "zone-chip";
+
+        const cname = document.createElement("span");
+        cname.className = "chip-name";
+        cname.textContent = f.name;
+
+        const csize = document.createElement("span");
+        csize.className = "chip-size";
+        csize.textContent = f.label;
+
+        const remove = document.createElement("button");
+        remove.type = "button";
+        remove.className = "chip-remove";
+        remove.setAttribute("aria-label", "Remove " + f.name + " from " + zone.toUpperCase());
+        remove.textContent = "×";
+        remove.addEventListener("click", function () {
+          setMembership(f.id, zone, false);
+        });
+
+        chip.appendChild(cname);
+        chip.appendChild(csize);
+        chip.appendChild(remove);
+        container.appendChild(chip);
+      });
+    }
+
+    function clearMarks() {
+      files.forEach(function (f) {
+        cardEls[f.id].classList.remove("correct", "incorrect");
+      });
+      hide(placementFeedback);
+    }
+
+    root.querySelector(".sa-check-placement").addEventListener("click", function () {
+      let correctCount = 0;
+      files.forEach(function (f) {
+        const userZones = ZONES.filter(function (z) { return placement[z].has(f.id); });
+        const isCorrect = sameSet(userZones, f.correct);
+        const card = cardEls[f.id];
+        card.classList.toggle("correct", isCorrect);
+        card.classList.toggle("incorrect", !isCorrect);
+        if (isCorrect) { correctCount++; }
+      });
+
+      if (correctCount === files.length) {
+        show(placementFeedback, "correct", opts.placementAllCorrect);
+      } else {
+        show(placementFeedback, "incorrect",
+          "<strong>" + correctCount + " of " + files.length +
+          " files placed correctly.</strong> " + opts.placementPartialHint);
+      }
+    });
+
+    root.querySelector(".sa-check-totals").addEventListener("click", function () {
+      const ap = parseFloat(apInput.value);
+      const ep = parseFloat(epInput.value);
+
+      if (Number.isNaN(ap) || Number.isNaN(ep)) {
+        show(totalsFeedback, "incorrect",
+          "<strong>Enter both totals first</strong> (in MB) before checking.");
+        return;
+      }
+
+      const apOk = Math.abs(ap - AP_TOTAL) <= opts.apTol;
+      const epOk = Math.abs(ep - EP_TOTAL) <= opts.epTol;
+
+      if (apOk && epOk) {
+        show(totalsFeedback, "correct", opts.totalsCorrect);
+        return;
+      }
+
+      let msg = "<strong>Not quite.</strong> ";
+      msg += apOk ? "Your AP total looks right. " : opts.hintAp + " ";
+      msg += epOk ? "Your EP total looks right." : opts.hintEp;
+      show(totalsFeedback, apOk || epOk ? "close" : "incorrect", msg);
+    });
+
+    root.querySelector(".sa-reset").addEventListener("click", function () {
+      placement.ap.clear();
+      placement.ep.clear();
+      files.forEach(function (f) {
+        cardEls[f.id].classList.remove("placed", "correct", "incorrect");
+        cardEls[f.id].querySelectorAll(".card-toggle").forEach(function (btn) {
+          btn.classList.remove("active");
+        });
+      });
+      renderZone("ap");
+      renderZone("ep");
+      apInput.value = "";
+      epInput.value = "";
+      hide(placementFeedback);
+      hide(totalsFeedback);
+    });
+
+    root.querySelector(".sa-show-answer").addEventListener("click", function () {
+      placement.ap.clear();
+      placement.ep.clear();
+      files.forEach(function (f) {
+        f.correct.forEach(function (z) { placement[z].add(f.id); });
+      });
+      renderZone("ap");
+      renderZone("ep");
+      files.forEach(function (f) {
+        updateCard(f.id);
+        cardEls[f.id].classList.remove("incorrect");
+        cardEls[f.id].classList.add("correct");
+      });
+      show(placementFeedback, "correct", opts.placementAllCorrect);
+      apInput.value = Math.round(AP_TOTAL);
+      epInput.value = Math.round(EP_TOTAL);
+      show(totalsFeedback, "correct", opts.totalsCorrect);
+    });
+
+    renderZone("ap");
+    renderZone("ep");
+  }
+
+  // ---- Exercise 1: a single job ----
+  const FILES_EX1 = [
+    { id: "wrapper",   name: "blast_wrapper.sh", size: 0,   label: "<1 MB",  correct: ["ap", "ep"] },
+    { id: "pdbaa_tgz", name: "pdbaa.tar.gz",     size: 22,  label: "22 MB",  correct: ["ap", "ep"] },
+    { id: "blast_tgz", name: "blast.tar.gz",     size: 14,  label: "14 MB",  correct: ["ap", "ep"] },
+    { id: "mouse",     name: "mouse.fa",         size: 0.4, label: "0.4 MB", correct: ["ap", "ep"] },
+    { id: "pdbaa_dir", name: "pdbaa/",           size: 97,  label: "97 MB",  correct: ["ep"] },
+    { id: "blast_dir", name: "blast/",           size: 39,  label: "39 MB",  correct: ["ep"] },
+    { id: "results",   name: "results",          size: 11,  label: "11 MB",  correct: ["ap", "ep"] },
+    { id: "stdio",     name: "job.out, job.err", size: 0,   label: "~0 MB",  correct: ["ap", "ep"] },
+    { id: "log",       name: "job.log",          size: 0,   label: "~0 MB",  correct: ["ap"] }
+  ];
+
+  const OPTS_EX1 = {
+    apTol: 1.5,
+    epTol: 3,
+    placementAllCorrect:
+      "<strong>All placed correctly!</strong> Every input and output file occupies " +
+      "disk on <em>both</em> ends &mdash; a transferred file still takes space where it " +
+      "starts and where it lands. Only the untarred <code>pdbaa/</code> and " +
+      "<code>blast/</code> directories live on the EP, and only <code>job.log</code> " +
+      "stays on the AP. That extra untarred data is why the EP needs far more disk.",
+    placementPartialHint:
+      "Remember: a file listed in <code>transfer_input_files</code> or " +
+      "<code>transfer_output_files</code> exists on <em>both</em> the AP and the EP. " +
+      "Only files created by untarring on the execute node (<code>pdbaa/</code>, " +
+      "<code>blast/</code>) are EP&#8209;only, and <code>job.log</code> is written on the AP.",
+    totalsCorrect:
+      "<strong>Correct!</strong> The AP needs about <strong>47 MB</strong> " +
+      "(compressed inputs plus the returned output), while the EP needs about " +
+      "<strong>183 MB</strong> at peak &mdash; the compressed inputs, the untarred " +
+      "<code>pdbaa/</code> (97 MB) and <code>blast/</code> (39 MB), and the results, " +
+      "all present at once. Size <code>request_disk</code> for the EP total.",
+    hintAp:
+      "For the <strong>AP</strong>, add the compressed inputs you send (~36 MB) plus the " +
+      "<code>results</code> returned (11 MB) &mdash; about 47 MB.",
+    hintEp:
+      "For the <strong>EP</strong>, add the compressed inputs, the <em>untarred</em> " +
+      "<code>pdbaa/</code> (97 MB) and <code>blast/</code> (39 MB), and the results " +
+      "&mdash; about 183 MB (the tarballs stay until the wrapper deletes them)."
+  };
+
+  // ---- Exercise 2: three jobs, each on its own execute node ----
+  // The EP box represents the single node running the mouse.fa job, so the
+  // horse.fa / dog.fa files (which run elsewhere) belong on the AP only.
+  const FILES_EX2 = [
+    { id: "wrapper",     name: "blast_wrapper.sh", size: 0,   label: "<1 MB",  correct: ["ap", "ep"] },
+    { id: "pdbaa_tgz",   name: "pdbaa.tar.gz",     size: 22,  label: "22 MB",  correct: ["ap", "ep"] },
+    { id: "blast_tgz",   name: "blast.tar.gz",     size: 14,  label: "14 MB",  correct: ["ap", "ep"] },
+    { id: "pdbaa_dir",   name: "pdbaa/",           size: 97,  label: "97 MB",  correct: ["ep"] },
+    { id: "blast_dir",   name: "blast/",           size: 39,  label: "39 MB",  correct: ["ep"] },
+    { id: "mouse",       name: "mouse.fa",         size: 0.4, label: "0.4 MB", correct: ["ap", "ep"] },
+    { id: "horse",       name: "horse.fa",         size: 0.4, label: "0.4 MB", correct: ["ap"] },
+    { id: "dog",         name: "dog.fa",           size: 0.4, label: "0.4 MB", correct: ["ap"] },
+    { id: "mouse_res",   name: "mouse.fa.result",  size: 11,  label: "11 MB",  correct: ["ap", "ep"] },
+    { id: "horse_res",   name: "horse.fa.result",  size: 11,  label: "11 MB",  correct: ["ap"] },
+    { id: "dog_res",     name: "dog.fa.result",    size: 11,  label: "11 MB",  correct: ["ap"] },
+    { id: "log",         name: "blast.log",        size: 0,   label: "~0 MB",  correct: ["ap"] }
+  ];
+
+  const OPTS_EX2 = {
+    apTol: 2,
+    epTol: 3,
+    placementAllCorrect:
+      "<strong>All placed correctly!</strong> The three jobs run on three separate " +
+      "execution points, so the node running <code>mouse.fa</code> still holds only the " +
+      "shared data plus <em>its own</em> query and result &mdash; about 183 MB, unchanged " +
+      "from one job. <code>horse.fa</code> and <code>dog.fa</code> never touch that node. " +
+      "The access point, though, stores the whole batch: the shared inputs once, plus all " +
+      "three queries and all three result files.",
+    placementPartialHint:
+      "The shared inputs (<code>blast_wrapper.sh</code>, the tarballs) are stored once on " +
+      "the AP and copied to every node. Each per-job file lives on the AP (you submit all " +
+      "three jobs from there) but only on <em>its own</em> job's execute node &mdash; so " +
+      "relative to the <code>mouse.fa</code> node, <code>horse.fa</code> and " +
+      "<code>dog.fa</code> (and their results) are AP&#8209;only.",
+    totalsCorrect:
+      "<strong>Correct!</strong> A single execution point still needs about " +
+      "<strong>183 MB</strong> &mdash; running more jobs doesn't pile up on any one node, " +
+      "because each runs elsewhere. The access point grows to about <strong>70 MB</strong>: " +
+      "the shared inputs counted <em>once</em> (~36 MB) plus three returned results " +
+      "(3 &times; 11 = 33 MB) and three small queries. Only the per-job files multiply.",
+    hintAp:
+      "For the <strong>AP</strong>, count the shared inputs once (~36 MB), then add all " +
+      "three results (3 &times; 11 = 33 MB) and the three queries (~1 MB) &mdash; about 70 MB.",
+    hintEp:
+      "For one <strong>EP</strong>, nothing changed from a single job: shared compressed " +
+      "inputs + untarred <code>pdbaa/</code> and <code>blast/</code> + one query + one " +
+      "result &mdash; about 183 MB. The other two jobs run on different nodes."
+  };
+
+  const container = document.getElementById("storage-activity");
+  const panels = {};
+  container.querySelectorAll(".sa-panel").forEach(function (p) {
+    panels[p.dataset.panel] = p;
+  });
+
+  buildActivity(panels.ex1, FILES_EX1, OPTS_EX1);
+  buildActivity(panels.ex2, FILES_EX2, OPTS_EX2);
+
+  // ---- Tab switching ----
+  const tabs = container.querySelectorAll(".sa-tab");
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      tabs.forEach(function (t) {
+        t.classList.remove("active");
+        t.setAttribute("aria-selected", "false");
+      });
+      container.querySelectorAll(".sa-panel").forEach(function (p) {
+        p.classList.remove("active");
+        p.hidden = true;
+      });
+      tab.classList.add("active");
+      tab.setAttribute("aria-selected", "true");
+      const panel = panels[tab.dataset.target];
+      panel.classList.add("active");
+      panel.hidden = false;
+    });
+  });
+})();
+</script>

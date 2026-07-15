@@ -83,6 +83,16 @@ nav:
 
 **Note:** This is generated in order so the order of the categories should correspond to the material overview page. 
 
+To add the quiz functionality, you will need to add the following to the ```/mkdocs.yml``` file:
+```yaml
+    markdown_extensions:
+      - pymdownx.snippets:
+          base_path:
+            - docs/materials/data
+```
+
+Add the path to the directory where the quiz html/javascript files are located. For example: ```docs/materials/data```. You can keep the quiz files in the same directory as the exercise markdown file or in a subdirectory for organization.
+
 ### Adding in Additional Files
 
 Files corresponding to each category should be in the subdirectory at location ```/docs/material/<category>/files/```.

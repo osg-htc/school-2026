@@ -1,0 +1,361 @@
+<div class="submit-builder" id="submit-builder">
+  <p class="sb-intro">
+    You've now built every piece of this job's submit file. Fill in the highlighted
+    values to match the steps above, then press <strong>Check submit file</strong>. The
+    greyed-out lines are already filled in for you. <code>request_memory</code> and
+    <code>request_disk</code> are judgment calls &mdash; there is no single right number,
+    so those are just checked for a sensible value with a unit.
+  </p>
+
+  <div class="sb-form" id="sb-form" aria-label="Submit file template"></div>
+
+  <div class="sb-actions">
+    <button type="button" id="sb-check">Check submit file</button>
+    <button type="button" id="sb-show">Show answer</button>
+    <button type="button" id="sb-reset">Reset</button>
+  </div>
+
+  <div class="feedback" id="sb-feedback" aria-live="polite"></div>
+</div>
+
+
+<style>
+.submit-builder {
+  border: 1px solid var(--md-default-fg-color--lightest, #ddd);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.submit-builder > :first-child {
+  margin-top: 0;
+}
+
+.sb-form {
+  background: var(--md-code-bg-color, #f5f5f5);
+  border-left: 4px solid var(--md-primary-fg-color, #4051b5);
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0 1.25rem;
+  overflow-x: auto;
+}
+
+.sb-row {
+  display: grid;
+  grid-template-columns: 12.5rem 1ch 1fr;
+  gap: 0.3rem 0.5rem;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+
+.sb-key,
+.sb-eq,
+.sb-static {
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.78rem;
+}
+
+.sb-key {
+  font-weight: 600;
+}
+
+.sb-static {
+  opacity: 0.6;
+}
+
+.sb-val {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.sb-input {
+  width: 100%;
+  min-width: 0;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--md-default-fg-color--light, #999);
+  border-radius: 4px;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.78rem;
+  background: var(--md-default-bg-color, #fff);
+  color: inherit;
+}
+
+.sb-input.correct {
+  border-color: #2e7d32;
+  box-shadow: inset 0 0 0 1px #2e7d32;
+}
+
+.sb-input.incorrect {
+  border-color: #d32f2f;
+  box-shadow: inset 0 0 0 1px #d32f2f;
+}
+
+.sb-note {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  display: none;
+}
+
+.sb-note.show {
+  display: block;
+}
+
+.sb-note.ok { color: #2e7d32; }
+.sb-note.info { opacity: 0.8; }
+.sb-note.bad { color: #d32f2f; }
+
+.sb-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.submit-builder button {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  background: var(--md-primary-fg-color, #4051b5);
+  color: #fff;
+}
+
+#sb-show,
+#sb-reset {
+  background: transparent;
+  color: inherit;
+  border: 1px solid var(--md-default-fg-color--light, #999);
+}
+
+.feedback {
+  margin-top: 0.9rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  display: none;
+}
+
+.feedback.correct {
+  display: block;
+  background: rgba(46, 125, 50, 0.12);
+  border-left: 4px solid #2e7d32;
+}
+
+.feedback.close {
+  display: block;
+  background: rgba(237, 108, 2, 0.12);
+  border-left: 4px solid #ed6c02;
+}
+
+.feedback.incorrect {
+  display: block;
+  background: rgba(211, 47, 47, 0.12);
+  border-left: 4px solid #d32f2f;
+}
+
+@media (max-width: 36rem) {
+  .sb-row {
+    grid-template-columns: 1fr;
+  }
+  .sb-eq {
+    display: none;
+  }
+}
+</style>
+
+
+<script>
+(function () {
+  function stripDot(s) { return s.trim().replace(/^\.\//, ""); }
+  const MEM_RE = /^\d+(\.\d+)?\s*(gb|mb|g|m|kb|k)?$/i;
+
+  // Ordered rows of the submit file. Editable rows have a `field`; the rest are static.
+  const ROWS = [
+    { field: {
+        id: "executable", key: "executable", answer: "blast_wrapper.sh",
+        placeholder: "your wrapper script",
+        validate: function (v) {
+          return stripDot(v) === "blast_wrapper.sh"
+            ? { ok: true }
+            : { ok: false, msg: "Use the wrapper script you created: <code>blast_wrapper.sh</code>." };
+        }
+    } },
+    { field: {
+        id: "tif", key: "transfer_input_files", answer: "blastx, pdbaa_files.tar.gz, mouse.fa",
+        placeholder: "comma-separated list",
+        validate: function (v) {
+          const items = v.split(",").map(stripDot).filter(Boolean);
+          const want = ["blastx", "pdbaa_files.tar.gz", "mouse.fa"];
+          const set = new Set(items);
+          const ok = items.length === want.length && want.every(function (w) { return set.has(w); });
+          return ok
+            ? { ok: true }
+            : { ok: false, msg: "List all three, comma-separated: the <code>blastx</code> binary, <code>pdbaa_files.tar.gz</code>, and the query <code>mouse.fa</code>." };
+        }
+    } },
+    { field: {
+        id: "tof", key: "transfer_output_files", answer: "mouse.fa.result",
+        placeholder: "the output file",
+        validate: function (v) {
+          return stripDot(v) === "mouse.fa.result"
+            ? { ok: true }
+            : { ok: false, msg: "The wrapper writes <code>mouse.fa.result</code> (from <code>-out mouse.fa.result</code>)." };
+        }
+    } },
+    { field: {
+        id: "tor", key: "transfer_output_remaps",
+        answer: '"mouse.fa.result = science-results/mouse.fa.result"',
+        placeholder: '"src = dst"',
+        validate: function (v) {
+          const t = v.trim();
+          const quoted = t.length >= 2 && t.charAt(0) === '"' && t.charAt(t.length - 1) === '"';
+          const inner = quoted ? t.slice(1, -1) : t;
+          const parts = inner.split("=");
+          if (parts.length !== 2) {
+            return { ok: false, msg: "Use one remap of the form <code>src = dst</code>, wrapped in double quotes." };
+          }
+          const src = stripDot(parts[0]);
+          const dst = stripDot(parts[1]);
+          if (src !== "mouse.fa.result" || dst !== "science-results/mouse.fa.result") {
+            return { ok: false, msg: "Map <code>mouse.fa.result</code> to <code>science-results/mouse.fa.result</code>." };
+          }
+          if (!quoted) {
+            return { ok: false, msg: "Almost &mdash; the whole value must be wrapped in <strong>double quotes</strong>." };
+          }
+          return { ok: true };
+        }
+    } },
+    { staticKey: "output", staticVal: "test.out" },
+    { staticKey: "error", staticVal: "test.err" },
+    { staticKey: "log", staticVal: "test.log" },
+    { field: {
+        id: "mem", key: "request_memory", answer: "1 GB",
+        placeholder: "e.g. 1 GB",
+        validate: function (v) {
+          if (!MEM_RE.test(v.trim())) {
+            return { ok: false, msg: "Enter an amount with a unit, e.g. <code>1 GB</code>." };
+          }
+          return { ok: true, info: "The exercise suggests <em>starting</em> at <code>1 GB</code> and letting it retry higher if the job runs out." };
+        }
+    } },
+    { field: {
+        id: "disk", key: "request_disk", answer: "2 GB",
+        placeholder: "e.g. 2 GB",
+        validate: function (v) {
+          if (!MEM_RE.test(v.trim())) {
+            return { ok: false, msg: "Enter an amount with a unit, e.g. <code>2 GB</code>." };
+          }
+          return { ok: true, info: "You need room for the binary, the tarball, the untarred database, the query, and the result (~200 MB). Something like <code>2 GB</code> leaves headroom." };
+        }
+    } },
+    { staticKey: "request_cpus", staticVal: "1" },
+    { staticKey: "requirements", staticVal: '(OSGVO_OS_STRING == "RHEL 9")' },
+    { staticKey: "queue" }
+  ];
+
+  const form = document.getElementById("sb-form");
+  const feedback = document.getElementById("sb-feedback");
+  const fields = [];
+
+  ROWS.forEach(function (row) {
+    const rowEl = document.createElement("div");
+    rowEl.className = "sb-row";
+
+    const key = document.createElement("span");
+    key.className = "sb-key";
+    key.textContent = row.field ? row.field.key : row.staticKey;
+    rowEl.appendChild(key);
+
+    // `queue` has no `= value`
+    if (row.staticKey === "queue") {
+      form.appendChild(rowEl);
+      return;
+    }
+
+    const eq = document.createElement("span");
+    eq.className = "sb-eq";
+    eq.textContent = "=";
+    rowEl.appendChild(eq);
+
+    if (row.field) {
+      const val = document.createElement("span");
+      val.className = "sb-val";
+
+      const input = document.createElement("input");
+      input.type = "text";
+      input.className = "sb-input";
+      input.setAttribute("spellcheck", "false");
+      input.setAttribute("autocomplete", "off");
+      input.placeholder = row.field.placeholder;
+
+      const note = document.createElement("span");
+      note.className = "sb-note";
+
+      val.appendChild(input);
+      val.appendChild(note);
+      rowEl.appendChild(val);
+
+      fields.push({ def: row.field, input: input, note: note });
+    } else {
+      const stat = document.createElement("span");
+      stat.className = "sb-static";
+      stat.textContent = row.staticVal;
+      rowEl.appendChild(stat);
+    }
+
+    form.appendChild(rowEl);
+  });
+
+  function applyResult(f, res) {
+    f.input.classList.remove("correct", "incorrect");
+    f.input.classList.add(res.ok ? "correct" : "incorrect");
+    f.note.className = "sb-note show " + (res.ok ? (res.info ? "info" : "ok") : "bad");
+    if (res.ok) {
+      f.note.innerHTML = res.info ? res.info : "&#10003; Looks good.";
+    } else {
+      f.note.innerHTML = res.msg;
+    }
+  }
+
+  function runCheck() {
+    let okCount = 0;
+    fields.forEach(function (f) {
+      const res = f.def.validate(f.input.value);
+      applyResult(f, res);
+      if (res.ok) { okCount++; }
+    });
+    if (okCount === fields.length) {
+      feedback.className = "feedback correct";
+      feedback.innerHTML =
+        "<strong>Your submit file looks complete!</strong> Every value matches the job you " +
+        "built above. Save it, then <code>condor_submit</code> it and confirm " +
+        "<code>mouse.fa.result</code> lands in <code>science-results/</code>.";
+    } else {
+      feedback.className = "feedback incorrect";
+      feedback.innerHTML =
+        "<strong>" + (fields.length - okCount) + " of " + fields.length +
+        " fields still need attention.</strong> Check the notes under each highlighted line.";
+    }
+  }
+
+  document.getElementById("sb-check").addEventListener("click", runCheck);
+
+  document.getElementById("sb-show").addEventListener("click", function () {
+    fields.forEach(function (f) { f.input.value = f.def.answer; });
+    runCheck();
+  });
+
+  document.getElementById("sb-reset").addEventListener("click", function () {
+    fields.forEach(function (f) {
+      f.input.value = "";
+      f.input.classList.remove("correct", "incorrect");
+      f.note.className = "sb-note";
+      f.note.innerHTML = "";
+    });
+    feedback.className = "feedback";
+    feedback.innerHTML = "";
+  });
+})();
+</script>

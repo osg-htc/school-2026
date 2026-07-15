@@ -3,16 +3,15 @@
 ## School Overview and Intro
 
 !!! abstract "Welcome Slides"
-	View the slides: [pdf](welcome/files/TODO)
+	View the slides: [pdf](welcome/files/osgs26-day1-part1-welcome.pdf)
 
-## Intro to HTC and HTCondor Job Execution
+!!! abstract "Introduction to High Throughput Computing"
+	View the slides: [pdf](welcome/files/osgs26-htc-intro.pdf)
 
-!!! abstract "Introductory Slides"
-	- Intro to HTC: [pdf](htcondor/files/TODO)
-	- Intro to HTCondor: TBD
+## Intro to HTCondor Job Execution
 
-!!! example "HTC worksheet"
-	Worksheet: [pdf](htcondor/files/HTC-List-Of-Jobs.pdf) or [Google Drive](https://docs.google.com/presentation/d/1USA6-qNur1Aa41pdvugJ7GqRKwHwnabTQ3dHVWtrlVY/edit?slide=id.g36a288fbaf8_0_25#slide=id.g36a288fbaf8_0_25)
+!!! abstract "HTCondor: Introductory Slides"
+	View the slides: [pdf](htcondor/files/osgus26-htc-htcondor.pdf)
 
 !!! note "Exercises: Intro to HTCondor"
 	- [Exercise 1.1: Log in to the local submit machine and look around](htcondor/part1-ex1-login.md)
@@ -25,7 +24,7 @@
 	- [Bonus Exercise 1.8: Explore `condor_status`](htcondor/part1-ex8-status.md)
 
 !!! abstract "HTCondor Multiple Job Slides"
-	View the Slides: [pdf](htcondor/files/osgus25-htc-htcondor-multiple-jobs.pdf)
+	View the Slides: [pdf](htcondor/files/osgus26-htc-htcondor-multiple-jobs.pdf)
 
 !!! note "Exercises: Running Many HTC Jobs" 
 	- [Exercise 2.1: Work with input and output files](htcondor/part2-ex1-files.md)
@@ -33,32 +32,33 @@
 	- [Exercise 2.3: Use `queue from` with custom variables](htcondor/part2-ex3-queue-from.md)
 	- [Bonus Exercise 2.4: Use `queue matching` with a custom variable](htcondor/part2-ex4-queue-matching.md)
  
+!!! example "HTC worksheet"
+	- Intro slides: [pdf](htcondor/files/osgs26-intro-to-worksheet.pdf)
+	- Worksheet: [pdf](htcondor/files/HTC-Workflow-Planning.pdf) or [Google Drive](https://docs.google.com/presentation/d/1USA6-qNur1Aa41pdvugJ7GqRKwHwnabTQ3dHVWtrlVY/)
+
 ## Software
 
 !!! abstract "Software Slides"
-	View the Slides: [pdf](software/files/osgs25-software.pdf), [pptx](software/files/osgs25-software.pptx)
+	View the Slides: [pdf](software/files/osgs26-software.pdf) [pptx](software/files/osgs26-software.pptx)
+
 
 !!! note "Software Exercises"
-	- [Exercise 1.1: Run and Explore Apptainer Containers](software/part1-ex1-run-apptainer.md)
-	- [Exercise 1.2: Use Apptainer Containers in OSPool Jobs](software/part1-ex2-apptainer-jobs.md)
-	- [Exercise 1.3: Use Docker Containers in OSPool Jobs](software/part1-ex3-docker-jobs.md)
-	- [Exercise 1.4: Build, Test, and Deploy an Apptainer Container](software/part1-ex4-apptainer-build.md)
-	- [Exercise 1.5: Choose Software Options](software/part1-ex5-pick-an-option.md)
-	- [Exercise 2.1: Build an HTC-Friendly Executable](software/part2-ex1-build-executable.md)
-	- [Exercise 3.1: Create an Apptainer Definition Files](software/part3-ex1-apptainer-recipes.md)
-	- [Exercise 3.2: Build Your Own Docker Container](software/part3-ex2-docker-build.md)
-	- [Exercise 4.1: Download and Use Compiled Software](software/part4-ex1-download.md)
-	- [Exercise 4.2: Use a Wrapper Script To Run Software](software/part4-ex2-wrapper.md)
-	- [Exercise 4.3: Using Arguments With Wrapper Scripts](software/part4-ex3-arguments.md)
-	- [Exercise 5.1: Compiling a Research Software](software/part5-ex1-prepackaged.md)
-	- [Exercise 5.2: Compiling Python and Running Jobs](software/part5-ex2-python.md)
-	- [Exercise 5.3: Using Conda Environments](software/part5-ex3-conda.md)
-	- [Exercise 5.4: Compiling and Running a Simple Code](software/part5-ex4-compiling.md)
+	- [Exercise 1.1 - Run and Explore Apptainer Containers](software/part1-ex1-run-apptainer.md)
+	- [Exercise 1.2 - Use Apptainer Containers in OSPool Jobs](software/part1-ex2-apptainer-jobs.md)
+	- [Exercise 1.3 - Use Docker Containers in OSPool Jobs](software/part1-ex3-docker-jobs.md)
+	- [Exercise 1.4 - Build and Use an Apptainer Container](software/part1-ex4-apptainer-build.md)
+	- [Exercise 2.1 - Choose Software Options](software/part2-ex1-software-strategies.md)
+	- [Exercise 2.2 - Finding Containers](software/part2-ex2-find-containers.md)
+	- [Exercise 2.3 - Apptainer Examples](software/part2-ex3-apptainer-examples.md)
+	- [Exercise 2.4 - Apptainer Definition Files](software/part2-ex4-apptainer-definition.md)
+	- [Exercise 2.5 - Example of Manual Installation](software/part2-ex5-manual-install.md)
+	- [Exercise 3.1 - Build Your Own Docker Container](software/part3-ex1-docker-build.md)
+	- [Exercise 4.1 - Build an HTC-Friendly Executable](software/part4-ex1-build-executable.md)
 
-## The Open Science Pool (OSPool) (Tuesday)
+## The Open Science Pool (OSPool)
 
 !!! abstract "OSPool Slides"
-	View the slides: [pdf](ospool/files/osgs25-day2-part1-osg-timc.pdf)
+	View the slides: 
 
 !!! note "Exercises: Researching the OSPool"
 	- [Exercise 1.1: Where Do Jobs Run?](ospool/part1-ex1-where-run.md)
@@ -70,7 +70,7 @@
 ## Data
 
 !!! abstract "Data Slides"
-	View the Slides: [pdf](data/files/osgus25-data.pdf)
+	View the Slides: [pptx](data/files/osgus26-data.pptx)
 
 !!! note "Data Exercises"
 	- [Exercise 1.1: Understanding a job's data needs](data/part1-ex1-data-needs.md)
@@ -78,6 +78,8 @@
 	- [Exercise 1.3: Splitting input](data/part1-ex3-blast-split.md)
 	- [Exercise 2.1: OSDF for inputs](data/part2-ex1-osdf-inputs.md)
 	- [Exercise 2.2: OSDF for outputs](data/part2-ex2-osdf-outputs.md)
+
+<!--
 
 ## Troubleshooting
 
@@ -128,3 +130,5 @@
 	*   Philosophy: [Slides coming soon]
 	*   Final thoughts: [Slides coming soon]
 	*   Forward (Tim’s final talk): [Slides coming soon]
+
+-->
