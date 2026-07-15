@@ -1014,14 +1014,16 @@ log = logs/split_blast.log
 </li>
 <li>
 <p>Add the <code>$(inputfile)</code> to the end of your list of <code>transfer_input_files</code>:</p>
-<div class="codehilite"><pre><span></span><code>transfer_input_files = ... , $(inputfile)
+<div class="codehilite"><pre><span></span><code>transfer_input_files = blastx, pdbaa_files.tar.gz, $(inputfile)
 </code></pre></div>
 
 </li>
 <li>
 <p>Remove or comment out <code>transfer_output_files</code> and <code>transfer_output_remaps</code>.</p>
-<p>transfer_output_files = $(inputfile).result
-transfer_output_remaps = "$(inputfile).result = science_results/$(inputfile).result"</p>
+<div class="codehilite"><pre><span></span><code>transfer_output_files = $(inputfile).result
+transfer_output_remaps = &quot;$(inputfile).result = science_results/$(inputfile).result&quot;
+</code></pre></div>
+
 </li>
 <li>
 <p>Update the memory and disk requests, since the new input file is larger and will also produce larger output.
