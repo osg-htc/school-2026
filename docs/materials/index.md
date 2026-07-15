@@ -58,7 +58,7 @@
 ## The Open Science Pool (OSPool)
 
 !!! abstract "OSPool Slides"
-	View the slides: 
+	View the slides: [pdf](ospool/files/osgs26-day2-part3-ospool-timc.pdf)
 
 !!! note "Exercises: Researching the OSPool"
 	- [Exercise 1.1: Where Do Jobs Run?](ospool/part1-ex1-where-run.md)
