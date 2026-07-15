@@ -971,7 +971,7 @@ image there:</p>
 job produces it, and <code>transfer_output_remaps</code> will write it to OSDF for us.</p>
 <h2 id="considerations">Considerations<a class="headerlink" href="#considerations" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Why is <code>minimap2.sif</code> placed in the OSDF directory? Is it a big container?</li>
+<li>Why is <code>minimap2.sif</code> placed in the OSDF directory?</li>
 </ul>
 <h2 id="create-a-wrapper-script-and-submit-the-job">Create a wrapper script and submit the job<a class="headerlink" href="#create-a-wrapper-script-and-submit-the-job" title="Permanent link">&para;</a></h2>
 <p>We need a wrapper script and a submit file that use OSDF for both the container and the output.</p>
@@ -1006,10 +1006,9 @@ minimap2 -x map-ont -d Celegans_ref.mmi Celegans_ref.fa
 
         queue 1
 </code></pre></div>
-<blockquote>
-<p>[!IMPORTANT]
-<strong>Redirecting outputs to OSDF with <code>transfer_output_remaps</code>.</strong>
-By default, HTCondor returns every file listed in <code>transfer_output_files</code> to the directory you
+<div class="admonition info">
+<p class="admonition-title">Redirecting outputs to OSDF with transfer_output_remaps</p>
+<p>By default, HTCondor returns every file listed in <code>transfer_output_files</code> to the directory you
 submitted the job from on the Access Point. <code>transfer_output_remaps</code> lets you send individual
 outputs somewhere else instead. Its syntax is a semicolon-separated list of <code>source = destination</code>
 pairs:</p>
@@ -1026,7 +1025,7 @@ the nearest cache with a plain <code>osdf:///ospool/ap40/data/[USERNAME]/Celegan
 <code>transfer_input_files</code>, keeping the large index off the Access Point and out of the OSPool network
 path. (Remember the naming warning above: to overwrite the index later, give it a new versioned
 name so caches don't serve a stale copy.)</p>
-</blockquote>
+</div>
 <ol>
 <li>Submit your <code>minimap2_index.sub</code> job to the OSPool:</li>
 </ol>

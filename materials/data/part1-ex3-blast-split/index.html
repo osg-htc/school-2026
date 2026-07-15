@@ -1000,9 +1000,9 @@ Follow the below steps:</p>
 <li>
 <p>Replace the <code>mouse.fa</code> instances in the submit file with <code>$(inputfile)</code>, and rename the output, log, and error files
    to use the same <code>inputfile</code> variable:</p>
-<div class="codehilite"><pre><span></span><code>output = $(inputfile).out
-error = $(inputfile).err
-log = $(inputfile).log
+<div class="codehilite"><pre><span></span><code>output = logs/$(inputfile).out
+error = logs/$(inputfile).err
+log = logs/split_blast.log
 </code></pre></div>
 
 </li>
@@ -1020,6 +1020,8 @@ log = $(inputfile).log
 </li>
 <li>
 <p>Remove or comment out <code>transfer_output_files</code> and <code>transfer_output_remaps</code>.</p>
+<p>transfer_output_files = $(inputfile).result
+transfer_output_remaps = "$(inputfile).result = science_results/$(inputfile).result"</p>
 </li>
 <li>
 <p>Update the memory and disk requests, since the new input file is larger and will also produce larger output.
