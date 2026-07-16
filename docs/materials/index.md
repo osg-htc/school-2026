@@ -84,7 +84,7 @@
 ## Troubleshooting
 
 !!! abstract "Troubleshooting Slides"
-	View the Slides: [pdf](troubleshooting/files/OSGUS2025_troubleshooting.pdf) [ppt](troubleshooting/files/OSGUS2025_troubleshooting.pptx)
+	View the Slides: [pdf](troubleshooting/files/osgs26-troubleshooting.pdf) [ppt](troubleshooting/files/osgs26-troubleshooting.pptx)
 
 !!! note "Troubleshooting Exercises"
 	- [Exercise 1.1: Troubleshooting Jobs](troubleshooting/part1-ex1-troubleshooting.md)
@@ -105,7 +105,7 @@
 ## Workflows with DAGMan
 
 !!! abstract "DAGMAn Slides"
-	View the slides: [pptx](workflows/files/osg25-dagman.pptx), [pdf](workflows/files/osg25-dagman.pdf)
+	View the slides: [pptx](workflows/files/osg26-dagman.pptx), [pdf](workflows/files/osg26-dagman.pdf)
 
 !!! note "DAGMan Exercises"
 
