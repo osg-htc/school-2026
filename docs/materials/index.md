@@ -103,7 +103,7 @@
 ## Workflows with DAGMan
 
 !!! abstract "DAGMAn Slides"
-	View the slides: [pptx](workflows/files/osg25-dagman.pptx), [pdf](workflows/files/osg25-dagman.pdf)
+	View the slides: [pptx](workflows/files/osg26-dagman.pptx), [pdf](workflows/files/osg26-dagman.pdf)
 
 !!! note "DAGMan Exercises"
 
