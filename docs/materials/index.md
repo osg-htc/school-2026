@@ -105,6 +105,8 @@
 
 
 ## Machine Learning
+!!! note "Machine Learning"
+	View the slides: [pptx](ml/files/throughput_ml.pptx), [pdf](ml/files/throughput_ml.pdf)
 
 
 ## Research Computing Facilitation
