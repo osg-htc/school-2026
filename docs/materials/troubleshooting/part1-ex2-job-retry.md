@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Exercise 1.2: Retries
+Troubleshooting Exercise 1.2: Retries
 ============================
 
 The goal of this exercise is to demonstrate running a job that intermittently fails and thus could benefit from having HTCondor automatically retry it.
@@ -48,7 +48,7 @@ Let’s see what happens when a program like this one is run in HTCondor.
 What output do you expect? What output did you get? If you are curious about the exit code from the job, it is saved in completed jobs in `condor_history` in the `ExitCode` attribute. The following command will show the `ExitCode` for a given cluster of jobs:
 
 ``` console
-user@server $ condor_history <CLUSTER> -af:h ProcId ExitCode
+$ condor_history <CLUSTER> -af:h ProcId ExitCode
 ```
 
 (Be sure to replace `<cluster>` with your actual cluster ID. The command may take a minute or so to complete.)

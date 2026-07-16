@@ -2,7 +2,7 @@
 status: in progress
 ---
 
-# OSG Exercise 2.1: Troubleshooting Jobs
+# Troubleshooting Exercise 1.1: Troubleshooting Jobs
 
 The **goal** of this exercise is to practice troubleshooting some common problems
 that you may encounter when submitting jobs using HTCondor.
@@ -21,7 +21,7 @@ We have prepared some Python code, data, and submit files for this exercise:
 1.  Download a tarball of the materials:
 
         :::console
-        user@server $ pelican object get osdf:///osg-public/school/2026/troubleshooting.tar.gz ./
+        $ pelican object get osdf:///osg-public/school/2026/troubleshooting.tar.gz ./
 
 3.  Extract the tarball using the commands that you learned earlier
 4.  Change into the newly extracted directory and explore its contents&nbsp;—
@@ -90,7 +90,7 @@ and are named `square-1.out`, `square-2.out`, etc.,
 then you could run the following command to find the largest square:
 
 ``` console
-user@server $ cat squares/square-*.out | sort -n | tail -n 1
+$ cat squares/square-*.out | sort -n | tail -n 1
 ```
 
 You can check if you have the right answer with any of the OSG staff
@@ -101,7 +101,7 @@ or by submitting the answer to Project Euler (requires an account).
 There is also a working solution that can be retrieved with
 
 ``` console
-user@server $ osdf object get /ospool/uc-shared/public/school/2025/troubleshooting-key.tar.gz .
+$ osdf object get /ospool/uc-shared/public/school/2025/troubleshooting-key.tar.gz .
 ```
 
 It contains comments labeled `SOLUTION` that you can consult in case you get stuck.

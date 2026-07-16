@@ -216,4 +216,5 @@ Bonus Challenge
 ---------------
 
 -   Re-run your DAG. When jobs are running, try `condor_q -nobatch -dag`. What does it do differently?
+- 	Is there a DAG option that allows you to pass arguments from the DAG into the submit file? (Spoiler: yes.) Once you find it, are you able to re-write the DAG to use a single submit file for the four tile-generation jobs? 
 -   Challenge, if you have time: Make a bigger DAG by making more tiles in the same area.
