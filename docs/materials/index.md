@@ -79,8 +79,6 @@
 	- [Exercise 2.1: OSDF for inputs](data/part2-ex1-osdf-inputs.md)
 	- [Exercise 2.2: OSDF for outputs](data/part2-ex2-osdf-outputs.md)
 
-<!--
-
 ## Troubleshooting
 
 !!! abstract "Troubleshooting Slides"
@@ -90,22 +88,10 @@
 	- [Exercise 1.1: Troubleshooting Jobs](troubleshooting/part1-ex1-troubleshooting.md)
 	- [Exercise 1.2: Job Retry](troubleshooting/part1-ex2-job-retry.md)
 
-## Scaling Up
-
-!!! abstract "Scaling Up Slides"
-	View the Slides: [pdf](scaling/files/osgschool25-scaling.pdf)
-
-!!! note "Scaling Up Exercises"	
-	- 	[Exercise 1.1: Organizing HTC workloads](scaling/part1-ex1-organization.md)
-	- 	[Exercise 1.2: Composing Your Jobs](scaling/part1-ex2-composing-the-job.md)
-	- 	[Exercise 2.1: Log Into a Local Pool](scaling/part2-ex1-chtc-node.md)
-	- 	[Exercise 2.2: Hardware Differences Between OSPool and the CHTC Pool](scaling/part2-ex2-hardware-diffs.md)
-	- 	[Exercise 2.3: Software Differences Between OSPool and the CHTC Pool](scaling/part2-ex3-software-diffs.md)
-
 ## Workflows with DAGMan
 
 !!! abstract "DAGMAn Slides"
-	View the slides: [pptx](workflows/files/osg26-dagman.pptx), [pdf](workflows/files/osg26-dagman.pdf)
+	View the slides: [pptx](workflows/files/osgs26-dagman.pptx), [pdf](workflows/files/osgs26-dagman.pdf)
 
 !!! note "DAGMan Exercises"
 
@@ -131,4 +117,3 @@
 	*   Final thoughts: [Slides coming soon]
 	*   Forward (Tim’s final talk): [Slides coming soon]
 
--->
