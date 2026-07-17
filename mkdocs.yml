@@ -55,6 +55,8 @@ nav:
     - Meal information:             logistics/meals.md
     - Fun activities:               logistics/fun-day.md
     - Dining options:               logistics/dining.md
+    - Reimbursements (Aug 21):      logistics/reimbursements.md
+    - Final assignment (Aug 28):    logistics/assignment.md
   - Materials:
     - Overview:                     materials/index.md
     - Intro to HTCondor:
