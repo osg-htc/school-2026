@@ -101,9 +101,6 @@
 	- [Exercise 1.4: Handling jobs that fail with DAGMan](workflows/part1-ex4-failed-dag.md)
 	- [Exercise 1.5: Workflow Challenges](workflows/part1-ex5-challenges.md)
 
-## Biology Resources
-
-
 ## Machine Learning
 !!! note "Machine Learning"
 	View the slides: [pptx](ml/files/throughput_ml.pptx), [pdf](ml/files/throughput_ml.pdf)
@@ -116,7 +113,6 @@
 ## Final Talks
 
 !!! abstract "Slides"	
-	*   Philosophy: [Slides coming soon]
-	*   Final thoughts: [Slides coming soon]
+	*   Philosophy: [pptx](final/files/HTCPhilosophyForOSG.pptx)
 	*   Forward (Tim’s final talk): [Slides coming soon]
 
