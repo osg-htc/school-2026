@@ -525,7 +525,7 @@ All School participants and staff are encourage to attend!
       <td>15:30</td>
       <td>16:30</td>
       <td><span class="before-dot text-light-blue">HTC Philosophy</td>
-      <td>Brian Bockelman</td>
+      <td>Greg Thain</td>
     </tr>
     <tr>
       <td>16:30</td>

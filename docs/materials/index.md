@@ -110,7 +110,8 @@
 
 
 ## Research Computing Facilitation
-
+!!! note "Machine Learning"
+	View the slides: [pptx](facilitation/files/osgs26-facilitation.pptx), [pdf](facilitation/files/osgs26-facilitation.pdf)
 
 ## Final Talks
 
