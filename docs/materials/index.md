@@ -94,7 +94,6 @@
 	View the slides: [pptx](workflows/files/osgs26-dagman.pptx), [pdf](workflows/files/osgs26-dagman.pdf)
 
 !!! note "DAGMan Exercises"
-
 	- [Exercise 1.1: Coordinating set of jobs: A simple DAG](workflows/part1-ex1-simple-dag.md)
 	- [Exercise 1.2: A brief detour through the Mandelbrot set](workflows/part1-ex2-mandelbrot.md)
 	- [Exercise 1.3: A more complex DAG](workflows/part1-ex3-complex-dag.md)
@@ -117,6 +116,4 @@
 
 !!! abstract "Slides"	
 	*   Philosophy: [Slides coming soon]
-	*   Final thoughts: [Slides coming soon]
-	*   Forward (Tim’s final talk): [Slides coming soon]
-
+	*   Forward (Tim’s final talk): [pdf](final/files/osgs26-day5-part9-forward-timc.pdf)
