@@ -493,7 +493,7 @@ All School participants and staff are encourage to attend!
         <br>
         &#9654; <span style="color: rgb(173, 81, 12);">Jordan Loeffler</span>;
         Chemical and Biological Engineering<br>
-        <!--<div style="margin-left: 2ex;">“Title of talk”</div>-->
+        <div style="margin-left: 2ex;"><a href="../materials/showcase/files/loeffler.pdf">"Developing a High Throughput Computational Workflow for Rationalizing Molecular Crystallization"</a></div>
         &#9654; <span style="color: rgb(173, 81, 12);">Annika Pratt</span>;
         Plant Pathology<br>
         <div style="margin-left: 2ex;"><a href="../materials/showcase/files/pratt.pdf">"High Throughput Computing for Fungal Genomics"</a></div>
