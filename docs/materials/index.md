@@ -115,5 +115,5 @@
 ## Final Talks
 
 !!! abstract "Slides"	
-	*   Philosophy: [Slides coming soon]
+	*   Philosophy: [pdf](philosophy/files/osgs26-day5-part4-philosophy-greg.pdf)
 	*   Forward (Tim’s final talk): [pdf](final/files/osgs26-day5-part9-forward-timc.pdf)
